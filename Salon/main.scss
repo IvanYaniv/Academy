@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+/*Header*/
+
+.wrapper {
+    max-width: 1690px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: none;
+    
+}
+
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 115px 0 115px;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item {
+    margin-right: 96px;
+    list-style-type: none;
+}
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_link {
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.header_link:hover, .header_link:focus, .header_link:active {
+    opacity: .75;
+}
+
+.apple_icon {
+    width:17,22px;
+    height:16,81px;
+    margin-right: 10.03px;
+}
+
+.google_icon {
+    width: 19.49px;
+    height: 21.22px;
+    margin-right: 11.25px;
+}
+
+/*main*/
+.intro {
+    height: 100vh;
+    background: url(main_background.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+@font-face {
+    font-family: "Sukhumvit Set";
+    src: url(../fonts/SukhumvitSet-Text.ttf);
+}

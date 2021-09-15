@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'mixins';
+
+
+
+/*FONTES*/
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-V.ttf);
+  src: url(../fonts/Inter-V.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+  src: url(../fonts/SFPRODISPLAYMEDIUM.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.otf);
+}
+
+
+
+* {
+    margin: 0;
+}
+
+/*Shadows*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 826px;
+}
+
+.all_boxes {
+display: block;
+margin: 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border-radius: 4px;
+}
+
+.all_boxes > div {
+width: 80px;
+height: 80px;
+margin-bottom: 8px;
+margin-left: 42px;
+background: #F2F2F2;
+}
+.text {
+font-family: $FFInter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+margin-left: 15px;
+}
+
+#first_text {
+width: 163px;
+height: 17px;
+left: 80px;
+top: 168px;
+}
+
+#second_text {
+width: 174px;
+height: 17px;
+left: 323px;
+top: 168px;
+}
+
+#third_text {
+width: 169px;
+height: 17px;
+left: 577px;
+top: 168px;
+}
+
+#fourth_text {
+width: 140px;
+height: 17px;
+left: 92px;
+top: 353px;
+}
+
+#fifrh_text {
+width: 151px;
+height: 17px;
+left: 335px;
+top: 353px;
+}
+#sixth_text {
+width: 145px;
+height: 17px;
+left: 589px;
+top: 353px;
+}
+
+
+.first_box {
+box-shadow: $first_box;
+}
+
+.second_box {
+box-shadow: $second_box;
+}
+
+.third_box {
+box-shadow: $third_box;
+}
+
+.fourth_box {
+box-shadow: $fourth_box;
+}
+
+.fifth_box {
+box-shadow: $fifth_box;
+}
+
+.sixth_box {
+box-shadow: $sixth_box;
+}

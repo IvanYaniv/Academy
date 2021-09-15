@@ -1,0 +1,337 @@
+@import 'variables';
+@import 'mixins';
+
+/*FONTES*/
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-V.ttf);
+    src: url(../fonts/Inter-V.otf);
+  }
+  
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+    src: url(../fonts/SFPRODISPLAYMEDIUM.ttf);
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.otf);
+  }
+  
+  
+  
+  * {
+      margin: 0;
+  }
+
+   /*COLORS*/
+
+   .wrapper {
+    @include wrapper
+  }
+
+  .wrapper > div {
+    margin: 80px;
+  }
+
+  .numbers {
+    @include numbers
+  }
+  
+  .parts {
+    display: flex;
+  }
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 48px);
+    grid-auto-rows: 48px;
+    margin-left: 48px;
+    grid-row-gap: $sixteen;
+    grid-column-gap: 59px;
+  }
+  
+
+  /*Mains*/
+
+  .first_square {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #E6EEFF;
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 48px;
+    border: 1px solid #E6EEFF;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .radius-mini-blocks {
+    border-radius: 2px;
+  }
+  
+  .sub_title {
+    font-family: $FFInter;
+    font-size: 14px;
+    line-height: 17px;
+    height: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #00194C;
+  }
+  
+  .sub_string {
+    font-size: 13px;
+    line-height: $sixteen;
+    margin-left: 8.5px;
+    height: $sixteen;
+    opacity: 0.48;
+  }
+
+  
+
+    /* primary squares colors */
+    
+  .blue_box {
+    background: $blue_box;
+  }
+
+  #primary_first {
+    background: $primary_first;
+  }
+  
+  #primary_second {
+    background: $primary_second;
+  }
+  
+  #primary_third {
+    background: $primary_third;
+  }
+  
+  #primary_fourth {
+    background: $primary_fourth;
+  }
+  
+  #primary_fifth {
+    background: $primary_fifth;
+  }
+  
+  #primary_sixth {
+    background: $primary_sixth;
+  }
+  
+  #primary_seventh {
+    background: $primary_seventh;
+  }
+  
+  #primary_eighth {
+    background: $primary_eigth;
+  }
+  
+  #primary_ninth {
+    background: $primary_ninth;
+  }
+  
+  .opacity_for_first {
+    opacity: $opac8;
+  }
+  
+  .opacity_for_second {
+    opacity: $opac16;
+  }
+  
+  .opacity_for_third {
+    opacity: $opac24;
+  }
+  
+  .opacity_for_fourth {
+    opacity: $opac32;
+  }
+  
+  .opacity_for_fifth {
+    opacity: $opac40;
+  }
+  
+  .opacity_for_sixth {
+    opacity: $opac48;
+  }
+
+  /* Secondary squares colors */
+  .secondary_box {
+    background: $secondaryy_box;
+  }
+
+  #secondary_first {
+    background: $secondary_first;
+  }
+  
+  #secondary_second {
+    background: $secondary_second;
+  }
+  
+  #secondary_third {
+    background: $secondary_third;
+  }
+  
+  #secondary_fourth {
+    background: $secondary_fourth;
+  }
+  
+  #secondary_fifth {
+    background: $secondary_fifth;
+  }
+  
+  #secondary_sixth {
+    background: $secondary_sixth;
+  }
+  
+  #secondary_seventh {
+    background: $secondary_seventh;
+  }
+  
+  #secondary_eighth {
+    background: $secondary_eigth;
+  }
+  
+  #secondary_ninth {
+    background: $secondary_ninth;
+  }
+  
+
+
+  /* info squares colors */
+  
+  .info_box {
+    background: $info_box;
+  }
+
+  #info_first {
+    background: $info_first;
+  }
+  
+  #info_second {
+    background: $info_second;
+  }
+  
+  #info_third {
+    background: $info_third;
+  }
+  
+  #info_fourth {
+    background: $info_fourth;
+  }
+  
+  #info_fifth {
+    background: $info_fifth;
+  }
+  
+  #info_sixth {
+    background: $info_sixth;
+  }
+  
+  #info_seventh {
+    background: $info_seventh;
+  }
+  
+  #info_eighth {
+    background: $info_eigth;
+  }
+  
+  #info_ninth {
+    background: $info_ninth;
+  }
+  
+ 
+
+  /* Succsess squares colors */
+  
+  .success_box {
+    background: $success_box;
+  }
+
+  #success_first {
+    background: $success_first;
+  }
+  
+  #success_second {
+    background: $success_second;
+  }
+  
+  #success_third {
+    background: $success_third;
+  }
+  
+  #success_fourth {
+    background: $success_fourth;
+  }
+  
+  #success_fifth {
+    background: $success_fifth;
+  }
+  
+  #success_sixth {
+    background: $success_sixth;
+  }
+  
+  #success_seventh {
+    background: $success_seventh;
+  }
+  
+  #success_eighth {
+    background: $success_eigth;
+  }
+  
+  #success_ninth {
+    background: $success_ninth;
+  }
+  
+ 
+
+    /* Errors squares colors */
+  
+    .error_box {
+      background: $error_box;
+    }
+  
+    #error_first {
+      background: $error_first;
+    }
+    
+    #error_second {
+      background: $error_second;
+    }
+    
+    #error_third {
+      background: $error_third;
+    }
+    
+    #error_fourth {
+      background: $error_fourth;
+    }
+    
+    #error_fifth {
+      background: $error_fifth;
+    }
+    
+    #error_sixth {
+      background: $error_sixth;
+    }
+    
+    #error_seventh {
+      background: $error_seventh;
+    }
+    
+    #error_eighth {
+      background: $error_eigth;
+    }
+    
+    #error_ninth {
+      background: $error_ninth;
+    }
+    

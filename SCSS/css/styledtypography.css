@@ -1,0 +1,125 @@
+/*FONTES*/
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-V.ttf);
+  src: url(../fonts/Inter-V.otf);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+  src: url(../fonts/SFPRODISPLAYMEDIUM.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.otf);
+}
+* {
+  margin: 0;
+}
+
+/*Typography*/
+.typography_titles {
+  display: flex;
+}
+
+.typography_header {
+  height: 67px;
+  background: #E6EEFF;
+}
+
+.typography_items {
+  padding: 20px;
+}
+
+.typography_first {
+  flex: 4;
+  width: 255px;
+  padding-left: 98px;
+  padding-bottom: 40px;
+}
+
+.typography_second {
+  flex: 2;
+  width: 70px;
+}
+
+.typography_third {
+  flex: 2;
+  width: 90px;
+}
+
+.typography_fourth {
+  flex: 17;
+  width: 540px;
+}
+
+.p1, .p2, .p3, .p4, h1, p {
+  font-family: "Inter";
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "SF Pro Display";
+  margin: 0px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p1 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.p2 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.p3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p4 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.typography_line {
+  border: 1px solid rgba(0, 82, 255, 0.16);
+}
+
+/*# sourceMappingURL=styledtypography.css.map */

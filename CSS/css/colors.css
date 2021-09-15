@@ -1,0 +1,393 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-V.ttf);
+    src: url(../fonts/Inter-V.otf);
+  }
+  
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+    src: url(../fonts/SFPRODISPLAYMEDIUM.ttf);
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.otf);
+  }
+
+* {
+    margin: 0px;
+}
+
+ /* COLORS */
+  /*Vars*/
+  :root {
+    --blue_box: #0052FF;
+    --primary_first: #E6EEFF;
+    --primary_second: #B3CBFF;
+    --primary_third: #80A9FF;
+    --primary_fourth: #4D86FF;
+    --primary_fifth: #0052FF;
+    --primary_sixth: #004AE6;
+    --primary_seventh: #0039B3;
+    --primary_eighth: #002980;
+    --primary_ninth:  #00194C;
+  
+    --secondaryy_box: #FE9526;
+    --secondary_first: #FFF4E9;
+    --secondary_second: #FFDFBE;
+    --secondary_third: #FFCA93;
+    --secondary_fourth: #FEB567;
+    --secondary_fifth: #FEA03C;
+    --secondary_sixth: #E58622;
+    --secondary_seventh: #B2681B;
+    --secondary_eighth: #7F4B13;
+    --secondary_ninth:  #331E08;
+  
+    --info_box: #FFCB2F;
+    --info_first: #FFFAEA;
+    --info_second: #FFEFC1;
+    --info_third: #FFE597;
+    --info_fourth: #FFDB6D;
+    --info_fifth: #FFD044;
+    --info_sixth: #E6B72A;
+    --info_seventh: #B38E21;
+    --info_eighth: #7F4B13;
+    --info_ninth:  #332909;
+  
+    --success_box: #53D86A;
+    --success_first: #EEFBF0;
+    --success_second: #CBF3D2;
+    --success_third: #A9ECB5;
+    --success_fourth: #87E497;
+    --success_fifth: #64DC79;
+    --success_sixth: #4BC25F;
+    --success_seventh: #3A974A;
+    --success_eighth: #21562A;
+    --success_ninth:  #112B15;
+  
+    --error_box: #FF3434;
+    --error_first: #FFEBEB;
+    --error_second: #FFC2C2;
+    --error_third: #FF9A9A;
+    --error_fourth: #FF7171;
+    --error_fifth: #FF4848;
+    --error_sixth: #E62F2F;
+    --error_seventh: #B32424;
+    --error_eighth: #801A1A;
+    --error_ninth:  #330A0A;
+  }
+  
+  
+  /*Wrapper*/
+  
+  .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 660px);
+      grid-auto-rows: minmax(446px, auto);
+    }
+    .wrapper > div {
+      margin: 80px;
+    }
+    
+    .numbers {
+      font-family: "Open Sans";
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 24px;
+      padding-top: 12px;
+    }
+    
+    .parts {
+      display: flex;
+    }
+    
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 48px);
+      grid-auto-rows: 48px;
+      margin-left: 48px;
+      grid-row-gap: 16px;
+      grid-column-gap: 59px;
+    }
+    
+  
+    /*Mains*/
+  
+    .first_square {
+      width: 130px;
+      height: 130px;
+      border: 1px solid #E6EEFF;
+      border-radius: 4px 4px 0px 0px;
+    }
+    
+    .description {
+      display: flex;
+      flex-direction: column;
+      width: 130px;
+      height: 48px;
+      border: 1px solid #E6EEFF;
+      border-radius: 0px 0px 4px 4px;
+    }
+    
+    .radius-mini-blocks {
+      border-radius: 2px;
+    }
+    
+    .sub_title {
+      font-family: "Inter";
+      font-size: 14px;
+      line-height: 17px;
+      height: 17px;
+      margin-top: 10px;
+      margin-left: 10px;
+      color: #00194C;
+    }
+    
+    .sub_string {
+      font-size: 13px;
+      line-height: 16px;
+      margin-left: 8.5px;
+      height: 16px;
+      opacity: 0.48;
+    }
+  
+    
+  
+      /* primary squares colors */
+      
+    .blue_box {
+      background: var(--blue_box);
+    }
+  
+    #primary_first {
+      background: var(--primary_first);
+    }
+    
+    #primary_second {
+      background: var(--primary_second);
+    }
+    
+    #primary_third {
+      background: var(--primary_third);
+    }
+    
+    #primary_fourth {
+      background: var(--primary_fourth);
+    }
+    
+    #primary_fifth {
+      background: var(--primary_fifth);
+    }
+    
+    #primary_sixth {
+      background: var(--primary_sixth);
+    }
+    
+    #primary_seventh {
+      background: var(--primary_seventh);
+    }
+    
+    #primary_eighth {
+      background: var(--primary_eighth);
+    }
+    
+    #primary_ninth {
+      background: var(--primary_ninth);
+    }
+    
+    .opacity_for_first {
+      opacity: 0.08;
+    }
+    
+    .opacity_for_second {
+      opacity: 0.16;
+    }
+    
+    .opacity_for_third {
+      background: var(--blue_box);
+      opacity: 0.24;
+    }
+    
+    .opacity_for_fourth {
+      background: var(--blue_box);
+      opacity: 0.32;
+    }
+    
+    .opacity_for_fifth {
+      background: var(--blue_box);
+      opacity: 0.4;
+    }
+    
+    .opacity_for_sixth {
+      background: var(--blue_box);
+      opacity: 0.48;
+    }
+  
+    /* Secondary squares colors */
+    .secondary_box {
+      background: var(--secondaryy_box);
+    }
+  
+    #secondary_first {
+      background: var(--secondary_first);
+    }
+    
+    #secondary_second {
+      background: var(--secondary_second);
+    }
+    
+    #secondary_third {
+      background: var(--secondary_third);
+    }
+    
+    #secondary_fourth {
+      background: var(--secondary_fourth);
+    }
+    
+    #secondary_fifth {
+      background: var(--secondary_fifth);
+    }
+    
+    #secondary_sixth {
+      background: var(--secondary_sixth);
+    }
+    
+    #secondary_seventh {
+      background: var(--secondary_seventh);
+    }
+    
+    #secondary_eighth {
+      background: var(--secondary_eighth);
+    }
+    
+    #secondary_ninth {
+      background: var(--secondary_ninth);
+    }
+  
+    /* info squares colors */
+    
+    .info_box {
+      background: var(--info_box);
+    }
+  
+    #info_first {
+      background: var(--info_first);
+    }
+    
+    #info_second {
+      background: var(--info_second);
+    }
+    
+    #info_third {
+      background: var(--info_third);
+    }
+    
+    #info_fourth {
+      background: var(--info_fourth);
+    }
+    
+    #info_fifth {
+      background: var(--info_fifth);
+    }
+    
+    #info_sixth {
+      background: var(--info_sixth);
+    }
+    
+    #info_seventh {
+      background: var(--info_seventh);
+    }
+    
+    #info_eighth {
+      background: var(--info_eighth);
+    }
+    
+    #info_ninth {
+      background: var(--info_ninth);
+    }
+
+    /* Succsess squares colors */
+    
+    .success_box {
+      background: var(--success_box);
+    }
+  
+    #success_first {
+      background: var(--success_first);
+    }
+    
+    #success_second {
+      background: var(--success_second);
+    }
+    
+    #success_third {
+      background: var(--success_third);
+    }
+    
+    #success_fourth {
+      background: var(--success_fourth);
+    }
+    
+    #success_fifth {
+      background: var(--success_fifth);
+    }
+    
+    #success_sixth {
+      background: var(--success_sixth);
+    }
+    
+    #success_seventh {
+      background: var(--success_seventh);
+    }
+    
+    #success_eighth {
+      background: var(--success_eighth);
+    }
+    
+    #success_ninth {
+      background: var(--success_ninth);
+    }
+    
+      /* Errors squares colors */
+    
+      .error_box {
+        background: var(--error_box);
+      }
+    
+      #error_first {
+        background: var(--error_first);
+      }
+      
+      #error_second {
+        background: var(--error_second);
+      }
+      
+      #error_third {
+        background: var(--error_third);
+      }
+      
+      #error_fourth {
+        background: var(--error_fourth);
+      }
+      
+      #error_fifth {
+        background: var(--error_fifth);
+      }
+      
+      #error_sixth {
+        background: var(--error_sixth);
+      }
+      
+      #error_seventh {
+        background: var(--error_seventh);
+      }
+      
+      #error_eighth {
+        background: var(--error_eighth);
+      }
+      
+      #error_ninth {
+        background: var(--error_ninth);
+      }

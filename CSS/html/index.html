@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index html</title>
+    <style>
+          .all_index_buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+    }
+        .index_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0052FF;
+        box-shadow: none;
+    }   
+        .index_button:hover, .index_button:focus {
+        opacity: 0.75;
+    }
+    
+        .index_link {
+        color: white;
+        text-decoration: none;    
+        }
+    
+        button {
+        margin: 2em;
+        height: 70px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #0052FF;
+        border-radius: 4px;
+    }
+
+        .index_title {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="index_title">
+        <h1>HTML Links</h1>
+    </div>
+
+    <div class="all_index_buttons">
+        <button class="index_button"><a class="index_link" href="typography.html" target="_blank">To Typography</a></button>
+        <button class="index_button"><a class="index_link" href="Colors.html" target="_blank">To Colors</a></button>
+        <button class="index_button"><a class="index_link" href="shadows.html" target="_blank">To Shadows</a></button>
+        <button class="index_button"><a class="index_link" href="Components.html" target="_blank">To Components</a></button>
+    </div>
+</body> 
+</html>

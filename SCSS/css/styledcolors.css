@@ -1,0 +1,321 @@
+/*FONTES*/
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-V.ttf);
+  src: url(../fonts/Inter-V.otf);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+  src: url(../fonts/SFPRODISPLAYMEDIUM.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.otf);
+}
+* {
+  margin: 0;
+}
+
+/*COLORS*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 660px);
+  grid-auto-rows: minmax(446px, auto);
+}
+
+.wrapper > div {
+  margin: 80px;
+}
+
+.numbers {
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-top: 12px;
+}
+
+.parts {
+  display: flex;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 48px);
+  grid-auto-rows: 48px;
+  margin-left: 48px;
+  grid-row-gap: 16px;
+  grid-column-gap: 59px;
+}
+
+/*Mains*/
+.first_square {
+  width: 130px;
+  height: 130px;
+  border: 1px solid #E6EEFF;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  height: 48px;
+  border: 1px solid #E6EEFF;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.radius-mini-blocks {
+  border-radius: 2px;
+}
+
+.sub_title {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  height: 17px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #00194C;
+}
+
+.sub_string {
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 8.5px;
+  height: 16px;
+  opacity: 0.48;
+}
+
+/* primary squares colors */
+.blue_box {
+  background: #0052FF;
+}
+
+#primary_first {
+  background: #E6EEFF;
+}
+
+#primary_second {
+  background: #B3CBFF;
+}
+
+#primary_third {
+  background: #80A9FF;
+}
+
+#primary_fourth {
+  background: #4D86FF;
+}
+
+#primary_fifth {
+  background: #0052FF;
+}
+
+#primary_sixth {
+  background: #004AE6;
+}
+
+#primary_seventh {
+  background: #0039B3;
+}
+
+#primary_eighth {
+  background: #002980;
+}
+
+#primary_ninth {
+  background: #00194C;
+}
+
+.opacity_for_first {
+  opacity: 0.08;
+}
+
+.opacity_for_second {
+  opacity: 0.16;
+}
+
+.opacity_for_third {
+  opacity: 0.24;
+}
+
+.opacity_for_fourth {
+  opacity: 0.32;
+}
+
+.opacity_for_fifth {
+  opacity: 0.4;
+}
+
+.opacity_for_sixth {
+  opacity: 0.48;
+}
+
+/* Secondary squares colors */
+.secondary_box {
+  background: #FE9526;
+}
+
+#secondary_first {
+  background: #FFF4E9;
+}
+
+#secondary_second {
+  background: #FFDFBE;
+}
+
+#secondary_third {
+  background: #FFCA93;
+}
+
+#secondary_fourth {
+  background: #FEB567;
+}
+
+#secondary_fifth {
+  background: #FEA03C;
+}
+
+#secondary_sixth {
+  background: #E58622;
+}
+
+#secondary_seventh {
+  background: #B2681B;
+}
+
+#secondary_eighth {
+  background: #7F4B13;
+}
+
+#secondary_ninth {
+  background: #331E08;
+}
+
+/* info squares colors */
+.info_box {
+  background: #FFCB2F;
+}
+
+#info_first {
+  background: #FFFAEA;
+}
+
+#info_second {
+  background: #FFEFC1;
+}
+
+#info_third {
+  background: #FFE597;
+}
+
+#info_fourth {
+  background: #FFDB6D;
+}
+
+#info_fifth {
+  background: #FFD044;
+}
+
+#info_sixth {
+  background: #E6B72A;
+}
+
+#info_seventh {
+  background: #B38E21;
+}
+
+#info_eighth {
+  background: #7F4B13;
+}
+
+#info_ninth {
+  background: #332909;
+}
+
+/* Succsess squares colors */
+.success_box {
+  background: #53D86A;
+}
+
+#success_first {
+  background: #EEFBF0;
+}
+
+#success_second {
+  background: #CBF3D2;
+}
+
+#success_third {
+  background: #A9ECB5;
+}
+
+#success_fourth {
+  background: #87E497;
+}
+
+#success_fifth {
+  background: #64DC79;
+}
+
+#success_sixth {
+  background: #4BC25F;
+}
+
+#success_seventh {
+  background: #3A974A;
+}
+
+#success_eighth {
+  background: #21562A;
+}
+
+#success_ninth {
+  background: #112B15;
+}
+
+/* Errors squares colors */
+.error_box {
+  background: #FF3434;
+}
+
+#error_first {
+  background: #FFEBEB;
+}
+
+#error_second {
+  background: #FFC2C2;
+}
+
+#error_third {
+  background: #FF9A9A;
+}
+
+#error_fourth {
+  background: #FF7171;
+}
+
+#error_fifth {
+  background: #FF4848;
+}
+
+#error_sixth {
+  background: #E62F2F;
+}
+
+#error_seventh {
+  background: #B32424;
+}
+
+#error_eighth {
+  background: #801A1A;
+}
+
+#error_ninth {
+  background: #330A0A;
+}
+
+/*# sourceMappingURL=styledcolors.css.map */

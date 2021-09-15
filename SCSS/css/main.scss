@@ -1,0 +1,843 @@
+
+@import 'variables';
+@import 'mixins';
+
+
+
+/*FONTES*/
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-V.ttf);
+  src: url(../fonts/Inter-V.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+  src: url(../fonts/SFPRODISPLAYMEDIUM.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.otf);
+}
+
+
+
+* {
+    margin: 0;
+}
+
+/*Typography*/
+
+.typography_titles {
+    display: flex;
+  }
+
+  .typography_header {
+    height: 67px;
+    background: $headerr;
+  }
+
+
+  .typography_items {
+    padding: $twenty;
+  }
+
+  .typography_first {
+    flex: 4;
+    width: 255px;
+    padding-left: 98px;
+    padding-bottom: 40px;
+  }
+  
+  .typography_second {
+    flex: 2;
+    width: 70px;
+  }
+  
+  .typography_third {
+    flex: 2;
+    width: 90px;
+  }
+  
+  .typography_fourth {
+    flex: 17;
+    width: 540px;
+  }
+
+  .p1, .p2, .p3, .p4, h1, p {
+    font-family: $FFInter;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: $SFPro;
+    margin: 0px;
+  }
+
+  p {
+    font-size: $sixteen;
+    line-height: 24px;
+  }
+  
+  .p1 {
+    font-size: $twenty;
+    line-height: 28px;
+  }
+  
+  .p2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .p3 {
+    font-size: $sixteen;
+    line-height: 24px;
+  }
+  
+  .p4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  h4 {
+    font-size: $twenty;
+    line-height: 28px;
+  }
+  
+  h5 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  h6 {
+    font-size: $sixteen;
+    line-height: 24px;
+  }
+
+  .typography_line {
+    border: 1px solid rgba(0, 82, 255, 0.16);
+  }
+
+  /*COLORS*/
+
+  .wrapper {
+    @include wrapper
+  }
+
+  .wrapper > div {
+    margin: 80px;
+  }
+
+  .numbers {
+    @include numbers
+  }
+  
+  .parts {
+    display: flex;
+  }
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 48px);
+    grid-auto-rows: 48px;
+    margin-left: 48px;
+    grid-row-gap: $sixteen;
+    grid-column-gap: 59px;
+  }
+  
+
+  /*Mains*/
+
+  .first_square {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #E6EEFF;
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 48px;
+    border: 1px solid #E6EEFF;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .radius-mini-blocks {
+    border-radius: 2px;
+  }
+  
+  .sub_title {
+    font-family: $FFInter;
+    font-size: 14px;
+    line-height: 17px;
+    height: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #00194C;
+  }
+  
+  .sub_string {
+    font-size: 13px;
+    line-height: $sixteen;
+    margin-left: 8.5px;
+    height: $sixteen;
+    opacity: 0.48;
+  }
+
+  
+
+    /* primary squares colors */
+    
+  .blue_box {
+    background: $blue_box;
+  }
+
+  #primary_first {
+    background: $primary_first;
+  }
+  
+  #primary_second {
+    background: $primary_second;
+  }
+  
+  #primary_third {
+    background: $primary_third;
+  }
+  
+  #primary_fourth {
+    background: $primary_fourth;
+  }
+  
+  #primary_fifth {
+    background: $primary_fifth;
+  }
+  
+  #primary_sixth {
+    background: $primary_sixth;
+  }
+  
+  #primary_seventh {
+    background: $primary_seventh;
+  }
+  
+  #primary_eighth {
+    background: $primary_eigth;
+  }
+  
+  #primary_ninth {
+    background: $primary_ninth;
+  }
+  
+  .opacity_for_first {
+    opacity: $opac8;
+  }
+  
+  .opacity_for_second {
+    opacity: $opac16;
+  }
+  
+  .opacity_for_third {
+    opacity: $opac24;
+  }
+  
+  .opacity_for_fourth {
+    opacity: $opac32;
+  }
+  
+  .opacity_for_fifth {
+    opacity: $opac40;
+  }
+  
+  .opacity_for_sixth {
+    opacity: $opac48;
+  }
+
+  /* Secondary squares colors */
+  .secondary_box {
+    background: $secondaryy_box;
+  }
+
+  #secondary_first {
+    background: $secondary_first;
+  }
+  
+  #secondary_second {
+    background: $secondary_second;
+  }
+  
+  #secondary_third {
+    background: $secondary_third;
+  }
+  
+  #secondary_fourth {
+    background: $secondary_fourth;
+  }
+  
+  #secondary_fifth {
+    background: $secondary_fifth;
+  }
+  
+  #secondary_sixth {
+    background: $secondary_sixth;
+  }
+  
+  #secondary_seventh {
+    background: $secondary_seventh;
+  }
+  
+  #secondary_eighth {
+    background: $secondary_eigth;
+  }
+  
+  #secondary_ninth {
+    background: $secondary_ninth;
+  }
+  
+
+
+  /* info squares colors */
+  
+  .info_box {
+    background: $info_box;
+  }
+
+  #info_first {
+    background: $info_first;
+  }
+  
+  #info_second {
+    background: $info_second;
+  }
+  
+  #info_third {
+    background: $info_third;
+  }
+  
+  #info_fourth {
+    background: $info_fourth;
+  }
+  
+  #info_fifth {
+    background: $info_fifth;
+  }
+  
+  #info_sixth {
+    background: $info_sixth;
+  }
+  
+  #info_seventh {
+    background: $info_seventh;
+  }
+  
+  #info_eighth {
+    background: $info_eigth;
+  }
+  
+  #info_ninth {
+    background: $info_ninth;
+  }
+  
+ 
+
+  /* Succsess squares colors */
+  
+  .success_box {
+    background: $success_box;
+  }
+
+  #success_first {
+    background: $success_first;
+  }
+  
+  #success_second {
+    background: $success_second;
+  }
+  
+  #success_third {
+    background: $success_third;
+  }
+  
+  #success_fourth {
+    background: $success_fourth;
+  }
+  
+  #success_fifth {
+    background: $success_fifth;
+  }
+  
+  #success_sixth {
+    background: $success_sixth;
+  }
+  
+  #success_seventh {
+    background: $success_seventh;
+  }
+  
+  #success_eighth {
+    background: $success_eigth;
+  }
+  
+  #success_ninth {
+    background: $success_ninth;
+  }
+  
+ 
+
+    /* Errors squares colors */
+  
+    .error_box {
+      background: $error_box;
+    }
+  
+    #error_first {
+      background: $error_first;
+    }
+    
+    #error_second {
+      background: $error_second;
+    }
+    
+    #error_third {
+      background: $error_third;
+    }
+    
+    #error_fourth {
+      background: $error_fourth;
+    }
+    
+    #error_fifth {
+      background: $error_fifth;
+    }
+    
+    #error_sixth {
+      background: $error_sixth;
+    }
+    
+    #error_seventh {
+      background: $error_seventh;
+    }
+    
+    #error_eighth {
+      background: $error_eigth;
+    }
+    
+    #error_ninth {
+      background: $error_ninth;
+    }
+    
+
+    /*Shadows*/
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 826px;
+  }
+  
+  .all_boxes {
+    display: block;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  
+  .all_boxes > div {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+    margin-left: 42px;
+    background: #F2F2F2;
+  }
+  .text {
+    font-family: $FFInter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 15px;
+  }
+
+  #first_text {
+    width: 163px;
+    height: 17px;
+    left: 80px;
+    top: 168px;
+  }
+  
+  #second_text {
+    width: 174px;
+    height: 17px;
+    left: 323px;
+    top: 168px;
+  }
+  
+  #third_text {
+    width: 169px;
+    height: 17px;
+    left: 577px;
+    top: 168px;
+  }
+  
+  #fourth_text {
+    width: 140px;
+    height: 17px;
+    left: 92px;
+    top: 353px;
+  }
+  
+  #fifrh_text {
+    width: 151px;
+    height: 17px;
+    left: 335px;
+    top: 353px;
+  }
+  #sixth_text {
+    width: 145px;
+    height: 17px;
+    left: 589px;
+    top: 353px;
+  }
+  
+  
+  .first_box {
+    box-shadow: $first_box;
+  }
+  
+  .second_box {
+    box-shadow: $second_box;
+  }
+  
+  .third_box {
+    box-shadow: $third_box;
+  }
+  
+  .fourth_box {
+    box-shadow: $fourth_box;
+  }
+  
+  .fifth_box {
+    box-shadow: $fifth_box;
+  }
+  
+  .sixth_box {
+    box-shadow: $sixth_box;
+  }
+
+  /* Buttons */
+
+  .all_buttons {
+    @include all_buttons;
+  }
+  
+  h5 {
+    font-size: $sixteen;
+    line-height: 24px;
+  }
+  button {
+    margin: 2em;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $blue_box;
+    border-radius: 4px;
+  }
+  button:disabled {
+    color: $primary_third;
+    background: rgba(0, 82, 255, 0.08);
+  }
+  .imgs {
+    padding: 10px;
+  }
+   img {
+     @include img;
+   }
+   .but_prime {
+    @include but_prime
+  }
+  .but_prime:hover {
+    background: $primary_fourth;
+    box-shadow: $third_box
+  }
+  .but_prime:focus {
+    background: $primary_fourth;
+    box-shadow: $third_box
+  }
+
+  .ghost {
+    color: $blue_box;
+    background: white;
+    color: $blue_box;
+    background: white;
+  }
+  .ghost:hover {
+    color: #0052FF;
+    background: rgba(0, 82, 255, 0.16);
+    border: 0px;
+    box-shadow: $third_box;
+  }
+  .ghost:focus {
+    color: #0052FF;
+    background: rgba(0, 82, 255, 0.16);
+    border: 0px;
+    box-shadow: $third_box;
+  }
+  
+  .disabled {
+    border: 0px;
+  }
+
+  /* Inputs */
+  
+  input:disabled {
+    background-color: white;
+  }
+  
+  .all_inputs {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-auto-rows: minmax(60px, auto);
+  }
+  .all_inputs div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .main {
+    margin: 10px;
+    border: 1px solid $primary_second;
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    font-size: 24px;
+    padding: 7px;
+  }
+  
+  .inp_prime:hover {
+    border: 3px solid $blue_box;
+  }
+  .inp_prime:focus {
+    border: 3px solid $blue_box;
+  }
+  
+  .error {
+    border: 2px solid $error_box;
+    color: $error_box;
+  }
+  .error::placeholder {
+    color: $error_box;
+  }
+
+  .inp_suc {
+    border: 2px solid $success_box;
+    color: $success_box;
+  }
+  .inp_suc::placeholder {
+    color: $success_box;
+  }
+  
+  .inp_inf {
+    border: 2px solid $info_box;
+    color: $info_box;
+  }
+  .inp_inf::placeholder {
+    color: $info_box;
+  }
+  
+  .icon_l {
+    padding-left: 45px;
+  }
+  
+  .icon_r {
+    padding-right: 45px;
+  }
+  
+  .icon_user {
+    background: url(../images/user.svg) no-repeat $twenty;
+    background-position: $background_position_one;
+  }
+  
+  .icon_desc_inf {
+    background: url(../images/user-info.svg) no-repeat $twenty;
+    background-position: $background_position_one;
+  }
+  
+  .icon_desc_suc {
+    background: url(../images/user-success.svg) no-repeat $twenty;
+    background-position: $background_position_one;
+  }
+  
+  .icon_desc_err {
+    background: url(../images/user-error.svg) no-repeat $twenty;
+    background-position: $background_position_one;
+  }
+  
+  .eyes {
+    background: url(../images/eye.svg) no-repeat $twenty;
+    background-position: $background_position_two;
+  }
+  
+  .eye_inf {
+    background: url(../images/eye-info.svg) no-repeat $twenty;
+    background-position: $background_position_two;
+  }
+  
+  .eye_suc {
+    background: url(../images/eye-success.sv) no-repeat $twenty;
+    background-position: $background_position_two;
+  }
+  
+  .eye_err {
+    background: url(../images/eye-error.svg) no-repeat $twenty;
+    background-position: $background_position_two;
+  }
+
+  /* Checkboxes */
+  
+  .checkboxes_container label {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+  }
+  
+  .our_checkboxes {
+    -webkit-appearance: none;
+  }
+  .our_checkboxes:checked + .check_field {
+    background: url(../images/checkbox-on.svg);
+  }
+  .our_checkboxes:disabled + .check_field {
+    background: url(../images/checkbox-off-disabled.svg);
+  }
+  .our_checkboxes:checked:disabled + .check_field {
+    background: url(checkbox-on-disabled.svg);
+  }
+  .our_checkboxes:checked + .radio_field {
+    background: url(../images/radio-on.svg);
+  }
+  .our_checkboxes:disabled + .radio_field {
+    background: url(../images/radio-off-disabled.svg);
+  }
+  .our_checkboxes:checked:disabled + .radio_field {
+    background: url(../images/radio-on-disabled.svg);
+  }
+  
+  .check_field {
+    width: 24px;
+    height: 24px;
+    background: url(../images/checkbox-off.svg);
+  }
+  
+  .radio_field {
+    width: 24px;
+    height: 24px;
+    background: url(../images/radio-off.svg);
+  }
+
+  /* Switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin-top: 90px;
+  }
+  
+  .slider-box {
+    position: absolute;
+    cursor: pointer;
+    top: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 15px;
+  }
+  .slider-box::before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    top: 1px;
+    left: 1px;
+    bottom: 0.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+  
+  .switch input {
+    -webkit-appearance: none;
+  }
+  
+  input:checked + .slider-box {
+    background-color: #ccc;
+  }
+  input:checked + .slider-box::before {
+    background-color: $blue_box;
+    transform: translateX(24px);
+  }
+  
+  
+  /* DropDown */
+  
+  .drop_button {
+    @include drop_button
+  }
+  
+  .text_btn {
+    padding: 15px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown_inner {
+    @include dropdown_inner
+  }
+  .dropdown_inner a {
+    color: $primary_ninth;
+    padding: $twelve $sixteen;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid $primary_first;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  

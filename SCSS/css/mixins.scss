@@ -1,0 +1,64 @@
+
+
+
+
+@mixin wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 660px);
+    grid-auto-rows: minmax(446px, auto);
+  }
+
+@mixin numbers {
+    font-family: $Opensans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-top: $twelve;
+  }
+
+@mixin img {
+    padding-right: 20px;
+}
+
+@mixin all_buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+@mixin  but_prime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary_first;
+    background: $blue_box;
+    box-shadow: none;
+}
+
+@mixin drop_button {
+    color: $blue_box;
+    width: 200px;
+    height: 54px;
+    border-radius: 4px;
+    font-size: $sixteen;
+    border: 1px solid $blue_box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+@mixin dropdown_inner {
+    display: none;
+    margin: 2px;
+    border-radius: 4px;
+    background-color: white;
+    width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px $sixteen 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+
