@@ -58,6 +58,10 @@
   border-radius: 4px 4px 0px 0px;
 }
 
+.borders_for_mini {
+  border-radius: 2px;
+}
+
 .description {
   display: flex;
   flex-direction: column;

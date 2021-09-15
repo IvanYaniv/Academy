@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Sukhumvit Set";
+    src: url(../fonts/SukhumvitSet-Text.ttf);
+    src: url(../fonts/SukhumvitSet-Text.otf);
+}
+
 * {
     margin: 0;
 }
@@ -68,14 +74,9 @@
 /*main*/
 .intro {
     height: 100vh;
-    background: url(main_background.jpg) no-repeat;
+    background: url(../images/main_background.jpg) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    
 }
 
 
-@font-face {
-    font-family: "Sukhumvit Set";
-    src: url(../fonts/SukhumvitSet-Text.ttf);
-}

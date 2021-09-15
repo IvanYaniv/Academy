@@ -19,8 +19,26 @@
 }
 
 /*Typography*/
+body {
+  color: #00194C;
+}
+
+.typography_fourth {
+  max-width: 500px;
+}
+
 .typography_titles {
   display: flex;
+}
+
+.first_typ_string {
+  margin-top: 80px;
+  margin-bottom: 48px;
+}
+
+.other_typ_string {
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .typography_header {

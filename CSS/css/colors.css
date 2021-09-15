@@ -121,6 +121,10 @@
       border: 1px solid #E6EEFF;
       border-radius: 4px 4px 0px 0px;
     }
+
+    .borders_for_mini {
+      border-radius: 2px;
+    }
     
     .description {
       display: flex;
