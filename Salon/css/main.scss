@@ -1,35 +1,60 @@
+@import 'variables';
+
 @font-face {
     font-family: "Sukhumvit Set";
+    src: url(../fonts/SukhumvitSet-Medium.ttf);
     src: url(../fonts/SukhumvitSet-Text.ttf);
-    src: url(../fonts/SukhumvitSet-Text.otf);
+    src: url(../fonts/SukhumvitSet-Bold.ttf);
 }
+
+@font-face {
+    font-family: "Saudagar";
+    src: url(../fonts/saudagar.ttf);
+    src: url(../fonts/saudagar.otf);
+}
+
 
 * {
     margin: 0;
 }
 /*Header*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
 
 .wrapper {
-    max-width: 1690px;
-    margin: 0 auto;
-    
+    position: relative;
+    max-width: 1920px;
+    margin: 0 115px;
 }
 
 .header {
-    position: absolute;
     width: 100%;
-    background-color: none;
-    
+    position: absolute;
 }
-
 
 .header_wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 80px 115px 0 115px;
+    padding-top: 80px;
 }
+
 
 .header_list {
     display: flex;
@@ -49,34 +74,609 @@
     font-family: "Sukhumvit Set";
     font-style: normal;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 24px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: capitalize;
+    color: $white;
+    padding-left: 30px;
 }
 .header_link:hover, .header_link:focus, .header_link:active {
     opacity: .75;
 }
 
 .apple_icon {
-    width:17,22px;
-    height:16,81px;
-    margin-right: 10.03px;
+    display: flex;
+    background: url(../images/apple.svg);
+    background-repeat: no-repeat;
 }
-
+  
 .google_icon {
-    width: 19.49px;
-    height: 21.22px;
-    margin-right: 11.25px;
+    display: flex;
+    background: url(../images/Subtract.svg);
+    background-repeat: no-repeat;
 }
 
-/*main*/
+/*Main*/
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*INTRO*/
+
 .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100vh;
-    background: url(../images/main_background.jpg) no-repeat;
+    background: url(../images/main_background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.intro_container {
+    width: 775px;
+    height: 471px;
+    left: 573px;
+    top: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_title {
+    font-family: "Saudagar";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.188rem;
+    line-height: 130%;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.intro_sub_title {
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 70px;
+}
+
+
+
+.button-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    
+    color: $black;
+    background: $buttons_background;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+  
+.button-intro {
+    width: 282px;
+    height: 59px;
+}
+
+/*Coming_soon*/
+
+.coming_soon_page {
+    display: block;
+    align-items: center;
+    width: 100%;
+    background: $black;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 140vh;
+  }
+
+
+
+.coming_soon_text {
+    margin-top: -15px;
+    margin-left: -70px;
+    text-transform: uppercase;
+    font-family: "Saudagar";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.75rem;
+    line-height: 100%;
+    white-space: nowrap;
+
+    color: $white;
+
+    opacity: 0.06;
+}
+
+.coming_soon_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming_soon_title {
+    max-width: 830px;
+
+    font-family: "Saudagar";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.125rem;
+    line-height: 130%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+
+    color: $white;
+    margin-top: 211px;
+    margin-bottom: 46px;
+}
+
+.coming_soon_subtitle {
+    max-width: 867px;
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 172%;
+    
+    text-align: center;
+    
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*Third page*/
+.shedule_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+.shedulepage_main_image {
+    width: 1520px;
+    height: 760px;
+    position: relative;
+    transform: translateY(-200px);
+    background: url(../images/thirdpageimage.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 300px;
+}
+
+/*OWN SHEDULE*/
+
+.shedule {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1339px;
+    height: 330px;
+    margin-left: 283px;
+    margin-right: 298px;
+    margin-top: 340px;
+    margin-bottom: 325px;
+  }
+
+.shedule_image {
+    background: url(../images/ownshedulephoto.jpg);
+    background-repeat: no-repeat;
+    width: 605px;
+    height: 330px;
+}  
+
+.first_textbox {
+    width: 484px;
+    height: 318px;
+}
+
+.suptitles {
+    font-family: "Saudagar";
+    font-size: 1.875rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $buttons_background;
+}
+
+.shedule_title {
+    width: 390px;
+    height: 130px;
+    font-family: "Saudagar";
+    font-size: 3.125rem;
+    line-height: 130%;
+    color: $black;
+}
+
+.first_subtitles {
+    margin-top: 47px;
+    width: 484px;
+    height: 96px;
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 172%;
+}
+
+.shedule_subtitle {
+    margin-top: 47px;
+    color: rgba(26, 26, 26, 0.8);
+}
+
+/*MAKE MONEY*/
+.money_page {
+    background: $black;
+    width: 100%;
+    height: 950px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+  
+.money {
+    display: flex;
+    width: 100%;
+    height: 950px;
+}
+
+.money_text {
+    margin-left: 283px;
+    margin-top: 316px;
+}
+
+
+
+.money_title {
+    width: 390px;
+    height: 130px;
+    font-family: "Saudagar";
+    font-size: 3.125rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $white;
+}
+
+
+.money_subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.money_image {
+    background: url(../images/moneyimage.jpg);
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 1030px;
+    transform: translateY(-80px);
+    margin-left: 373px;
+}
+
+/*main_phone*/
+
+.main_phone_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    height: 1984px;
+}
+
+.the_phone_block {
+    width: 1690px;
+    height: 1544px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 240px;
+}
+
+.over_the_phone_blocks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1520px;
+    height: 324px;
+    margin-left: 85px;
+    top: 0px;
+}
+
+.second_textbox {
+    width: 484px;
+    height: 324px;
+    margin-top: 0px;
+}
+
+.shapper_text {
+    margin-left: 0px;
+}
+
+
+
+.shapper_title {
+    max-width: 390px;
+    height: 130px;
+    left: 85px;
+    top: 45px;
+    font-family: "Saudagar";
+    font-size: 3.125rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $black;
+}
+
+.second_subtitles {
+    width: 484px;
+    height: 102px;
+    margin-top: 47px;
+    font-family: "Sukhumvit Set";
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 172%;
+    color: rgba(26, 26, 26, 0.8);
+}
+
+
+.personal_text {
+    margin-right: 0px;
+}
+
+.personal_title {
+    width: 390px;
+    height: 130px;
+    font-family: "Saudagar";
+    font-size: 3.125rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $black;
+}
+
+/*circles*/
+
+.circles_box {
+    display: flex;
+    justify-content: space-between;
+    width: 1689.51px;
+    height: 756px;
+    margin-top: 210px;
+}
+
+.first_circle {
+    width: 541px;
+    height: 541px;
+    margin-top: 69px;
+    background: url(../images/firstcircle.jpg);
+    background-repeat: no-repeat;
+}
+
+.second_circle {
+    width: 540px;
+    height: 540px;
+    margin-top: 69px;
+    background: url(../images/firstcircle.jpg);
+    background-repeat: no-repeat;
+}
+
+.third_circle {
+    width: 540px;
+    height: 540px;
+    margin-top: 69px;
+    background: url(../images/thirdcircle.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.phone_photo {
+    margin-left: 94px;
+    transform: translateY(-70px);
+}
+
+.under_phone_box {
+    display: block;
+    width: 384px;
+    height: 134px;
+    margin-top: 120px;
+    margin-left: 653px;
+    margin-right: 653px;
+}
+
+.coming_soon_on {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    font-family: "Sukhumvit Set";
+    font-size: 25px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.under_phone_links {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+  
+.left_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 24px;
+    color: white;
+    width: 182px;
+    height: 52px;
+    background-color: black;
+}
+
+.right_link {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 24px;
+    color: white;
+    width: 182px;
+    height: 52px;
+    background-color: black;
+}
+  
+.icon-button {
+    margin-right: 10px;
+}
+
+
+/*Last page*/
+
+.last_page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1080px;
+    background: $black;
+    backdrop-filter: blur(4px);
     -webkit-background-size: cover;
     background-size: cover;
 }
+
+.last_page_photo {
+    width: 50%;
+    height: 1080px;
+    background: url(../images/lastpagephoto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.last_page_subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 1080px;
+}
+
+
+.subscribe_title {
+    width: 236px;
+    height: 64px;
+    font-family: "Saudagar";
+    font-size: 3.125rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.inputs_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;  
+}
+
+
+.input_field {
+    width: 560px;
+    height: 59px;
+    margin-top: 60px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 165%;
+    text-transform: uppercase;
+    color: #8E8E8E;
+  }
+
+.button-sub {
+    margin-top: 70px;
+    width: 560px;
+    height: 59px;
+  }
+
+.drop-down {
+    width: 560px;
+    height: 59px;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 60px;
+}
+
+.drop-down-text {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 165%;
+    text-transform: uppercase;
+    color: #8E8E8E;
+}
+
+/*FOOTER*/
+
+.footer {
+    width: 100%;
+    height: 110px;
+    background: #000000;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    margin-top: 46px;
+    margin-left: 125px;
+}
+
+.footer_text {
+    margin-top: 42px;
+    margin-right: 115px;
+    font-family: "Sukhumvit Set";
+    font-size: 1rem;
+    line-height: 165%;
+    color: $white;
+}
+
+
+  
 
 
