@@ -1,13 +1,17 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Sukhumvit Set";
-  src: url(../fonts/SukhumvitSet-Medium.ttf);
-  src: url(../fonts/SukhumvitSet-Text.ttf);
-  src: url(../fonts/SukhumvitSet-Bold.ttf);
+  src: url("fonts/SukhumvitSet-Text.eot");
+  src: local("☺"), url("../fonts/SukhumvitSet-Text.woff") format("woff"), url("../fonts/SukhumvitSet-Text.ttf") format("truetype"), url("../fonts/SukhumvitSet-Text.svg") format("svg"), url(../fonts/SukhumvitSet-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Saudagar";
-  src: url(../fonts/saudagar.ttf);
-  src: url(../fonts/saudagar.otf);
+  src: url("../fonts/saudagar.eot");
+  src: local("☺"), url("../fonts/saudagar.woff") format("woff"), url("../fonts/saudagar.ttf") format("truetype"), url("../fonts/saudagar.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 * {
   margin: 0;
@@ -43,6 +47,30 @@ a {
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 80px;
+}
+
+.under_phone_box_mobile {
+  display: none;
+}
+
+.circles_box_mobile {
+  display: none;
+}
+
+.shapper_text_mobile {
+  display: none;
+}
+
+.personal_text_mobile {
+  display: none;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.header_mobile {
+  display: none;
 }
 
 .header_list {
@@ -171,7 +199,7 @@ a {
   background: #1A1A1A;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 140vh;
+  height: 1280px;
 }
 
 .coming_soon_text {
@@ -632,6 +660,381 @@ a {
   font-size: 1rem;
   line-height: 165%;
   color: #FFFFFF;
+}
+
+/*Responsive*/
+@media screen and (max-width: 575px) {
+  /*Header*/
+  .wrapper {
+    max-width: 375px;
+    margin: 0;
+  }
+
+  .header_wrapper {
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_logo {
+    margin-top: 37px;
+  }
+
+  .header_mobile {
+    width: 375px;
+    height: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_time {
+    margin-left: 21.72px;
+  }
+
+  .header_mobile_icons {
+    margin-right: 5px;
+  }
+
+  .header_mobile_icons:last-child {
+    margin-right: 13.62px;
+  }
+
+  .header_nav {
+    display: none;
+  }
+
+  /*Intro*/
+  .intro {
+    height: 636px;
+  }
+
+  .intro_container {
+    width: 333px;
+    height: 274px;
+  }
+
+  .intro_title {
+    margin-top: 177px;
+    font-size: 100px;
+    margin-bottom: 0px;
+  }
+
+  .intro_sub_title {
+    font-size: 18px;
+    margin-bottom: 47px;
+    line-height: 130%;
+  }
+
+  .nav_mobile {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 10px;
+    font-family: Sukhumvit Set;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+
+  .mobile_link {
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+
+  .apple_smaller_icon {
+    background: url(../images/Group.svg);
+    background-repeat: no-repeat;
+  }
+
+  .google_smaller_icon {
+    background: url(../images/Goo.svg);
+    background-repeat: no-repeat;
+  }
+
+  /*COMING SOON PAGE*/
+  .coming_soon_page {
+    height: 495px;
+  }
+
+  .coming_soon_text {
+    max-width: 375px;
+    margin-left: 2px;
+    margin-top: -4px;
+    font-size: 60px;
+  }
+
+  .coming_soon_title {
+    max-width: 343px;
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .coming_soon_subtitle {
+    max-width: 301px;
+    font-size: 14px;
+  }
+
+  /*Third page*/
+  .shedulepage_main_image {
+    width: 375px;
+    height: 221px;
+    transform: none;
+    margin-bottom: 0;
+  }
+
+  /*OWN SHEDULE*/
+  .shedule {
+    width: 375px;
+    height: 444px;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .shedule_image {
+    width: 335px;
+    height: 183px;
+    margin-bottom: 66px;
+  }
+
+  .first_textbox {
+    width: 300px;
+    height: 115px;
+  }
+
+  .suptitles {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+
+  .shedule_title {
+    width: 300px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    height: 32px;
+    font-size: 25px;
+  }
+
+  .first_subtitles {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .shedule_subtitle {
+    max-width: 305px;
+    margin-top: 0px;
+  }
+
+  /*MAKE MONEY*/
+  .money_page {
+    width: 375px;
+    height: 421px;
+  }
+
+  .money {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 421px;
+  }
+
+  .money_text {
+    margin-left: 20px;
+    margin-top: -120px;
+  }
+
+  .money_suptitle {
+    margin-top: 0px;
+  }
+
+  .money_title {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 300px;
+    height: 32px;
+    font-size: 25px;
+  }
+
+  .money_image {
+    background: url(../images/mon.jpg);
+    margin-top: 50px;
+    transform: none;
+    margin-left: 0;
+    width: 375px;
+    height: 206px;
+  }
+
+  .money_subtitle {
+    max-width: 300px;
+  }
+
+  /*main_phone*/
+  .main_phone_page {
+    width: 375px;
+    height: 892px;
+    justify-content: flex-start;
+  }
+
+  .the_phone_block {
+    display: none;
+  }
+
+  .shapper_text_mobile {
+    display: block;
+  }
+
+  .personal_text_mobile {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .second_textbox {
+    width: 305px;
+    height: 139px;
+  }
+
+  .shapper_title {
+    max-width: 305px;
+    height: 32px;
+    margin-top: 7px;
+    font-size: 25px;
+  }
+
+  .second_subtitles {
+    margin-top: 7px;
+    font-size: 14px;
+    max-width: 305px;
+  }
+
+  .personal_title {
+    width: 199px;
+    height: 32px;
+    font-size: 25px;
+    margin-top: 7px;
+  }
+
+  /*circles*/
+  .circles_box_mobile {
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    height: 201.8px;
+    margin-top: 100px;
+    background: url(../images/circles.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .phone_photo_mobile {
+    width: 135.41px;
+    height: 282px;
+    transform: translateY(-25.74px);
+  }
+
+  .under_phone_box_mobile {
+    width: 375px;
+    height: 76px;
+    display: block;
+    margin-top: 140px;
+  }
+
+  .coming_soon_on {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .under_phone_links {
+    margin-top: 14.46px;
+    margin-bottom: 0px;
+  }
+
+  .left_link {
+    width: 158.78px;
+    height: 45.36px;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+
+  .right_link {
+    width: 158.78px;
+    height: 45.36px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  /*Last page*/
+  .last_page {
+    display: flex;
+    justify-content: center;
+    width: 375px;
+  }
+
+  .last_page_photo {
+    display: none;
+  }
+
+  .last_page_subscribe {
+    height: 898px;
+    width: 100%;
+  }
+
+  .inner_subscribe_box {
+    width: 375px;
+    margin-top: 95px;
+  }
+
+  .subscribe_title {
+    width: 118px;
+    height: 32px;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+
+  .input_field {
+    margin-top: 50px;
+    width: 335px;
+    height: 41px;
+    font-size: 14px;
+  }
+
+  .button-sub {
+    margin-top: 50px;
+    width: 335px;
+    height: 59px;
+  }
+
+  .drop-down {
+    width: 335px;
+    height: 41px;
+  }
+
+  .drop-down-text {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  /*FOOTER*/
+  .footer {
+    width: 375px;
+    height: 95px;
+  }
+
+  .footer_logo {
+    margin-top: 39px;
+    margin-left: 20px;
+  }
+
+  .footer_text {
+    font-size: 10px;
+    margin-top: 42px;
+    margin-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=mainstyle.css.map */
