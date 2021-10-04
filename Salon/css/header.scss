@@ -1,0 +1,123 @@
+@import 'variables';
+
+@font-face {
+	font-family: 'Sukhumvit Set';
+	src: url('fonts/SukhumvitSet-Text.eot');
+	src: local('☺'), url('../fonts/SukhumvitSet-Text.woff') format('woff'), url('../fonts/SukhumvitSet-Text.ttf') format('truetype'), url('../fonts/SukhumvitSet-Text.svg') format('svg'), url(../fonts/SukhumvitSet-Bold.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Saudagar';
+	src: url('../fonts/saudagar.eot');
+	src: local('☺'), url('../fonts/saudagar.woff') format('woff'), url('../fonts/saudagar.ttf') format('truetype'), url('../fonts/saudagar.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+    margin: 0;
+}
+/*Header*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+.wrapper {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 115px;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.under_phone_box_mobile {
+    display: none;
+}
+
+.circles_box_mobile {
+    display: none;
+}
+
+.shapper_text_mobile {
+    display: none;
+}
+.personal_text_mobile {
+    display: none;
+}
+
+.nav_mobile {
+    display: none;
+
+}
+
+.header_mobile {
+    display: none;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item {
+    margin-right: 96px;
+    list-style-type: none;
+}
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_link {
+    font-family: "Sukhumvit Set";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 24px;
+    color: $white;
+    padding-left: 30px;
+}
+.header_link:hover, .header_link:focus, .header_link:active {
+    opacity: .75;
+}
+
+.apple_icon {
+    display: flex;
+    background: url(../images/apple.svg);
+    background-repeat: no-repeat;
+}
+  
+.google_icon {
+    display: flex;
+    background: url(../images/Subtract.svg);
+    background-repeat: no-repeat;
+}
