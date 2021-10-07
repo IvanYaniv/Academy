@@ -85,7 +85,17 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: $white;
+    width: 100%;
+    overflow: hidden;
+    animation: type 3s steps(60, end);
+    animation-iteration-count: infinite;
 }
+
+@keyframes type{ 
+    from { 
+         width: 0; 
+         } 
+  }       
 
 .intro_sub_title {
     font-family: "Sukhumvit Set";
@@ -158,8 +168,32 @@ body {
     color: $white;
 
     opacity: 0.06;
-}
-
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  }
+  
+  @keyframes blur {
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+  }
 .coming_soon_container {
     display: flex;
     flex-direction: column;
@@ -239,9 +273,14 @@ body {
     height: 330px;
 }  
 
+
 .first_textbox {
     width: 484px;
     height: 318px;
+}
+
+.first_textbox:hover .suptitles {
+    transform: translate(-30px);
 }
 
 .suptitles {
@@ -251,6 +290,10 @@ body {
     text-transform: uppercase;
     color: $buttons_background;
 }
+
+.for_sup_hovers:hover .suptitles{
+    transform: translate(-30px);
+  }
 
 .shedule_title {
     width: 390px;
@@ -358,6 +401,10 @@ body {
     width: 484px;
     height: 324px;
     margin-top: 0px;
+}
+
+.second_textbox:hover .suptitles {
+    transform: translate(-15px);
 }
 
 .shapper_text {

@@ -91,7 +91,6 @@ body {
 
     .intro_container {
         width: 100%;
-        height: 274px;
     }
 
     .intro_title {
@@ -100,7 +99,7 @@ body {
         margin-bottom: 0px;
         line-height: 130px;
     }
-    
+
     .intro_sub_title {
         max-width: 320px;
         font-size: calc(0.8rem + 1vw);
@@ -109,9 +108,9 @@ body {
     }
 
     .nav_mobile {
+        margin-top: 50px;
         display: flex;
         justify-content: center;
-        margin-top: 200px;
         font-family: Sukhumvit Set;
         font-style: normal;
         font-weight: 500;
@@ -194,6 +193,10 @@ body {
     .first_textbox {
         width: 300px;
         height: 115px;
+    }
+
+    .first_textbox:hover .suptitles {
+        transform: translate(-4px);
     }
 
     .suptitles {
@@ -299,6 +302,9 @@ body {
     .second_textbox {
         width: 305px;
         height: 139px;
+    }
+    .second_textbox:hover .suptitles {
+        transform: translate(-4px);
     }
 
     .shapper_title {
@@ -456,4 +462,241 @@ body {
         line-height: 16px;
     }
 
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {  
+    .wrapper {
+        max-width: 100%;
+        margin: 0 70;
+    }
+
+    .header_item {
+        margin-right: 60px;
+        list-style-type: none;
+    }
+
+    .header_link {
+        font-family: "Sukhumvit Set";
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(1rem + 0.5vw);
+        line-height: 24px;
+        color: $white;
+        padding-left: 30px;
+    }
+
+    /*intro*/
+
+
+    .coming_soon_text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        font-size: 160px;
+        line-height: 62px;
+    }
+
+    .intro_title {
+        font-size: calc(15rem + 0.5vw);
+        margin-top: 70px;
+    }
+
+    .intro_sub_title {
+        font-size: calc(1.5rem + 0.5vw);
+        margin-top: -30px;
+    }
+
+    .button-primary { 
+        margin-top: -50px;
+    }    
+
+    .coming_soon_title {
+        font-size: calc(2.5rem + 0.5vw);
+    }
+
+    .coming_soon_subtitle {
+        font-size: calc(1.375rem + 0.5vw);
+    }    
+
+        /*third page*/
+
+    .shedulepage_main_image {
+        width: 85%;
+    }
+
+    .shedule {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .shedule_image {
+        width: 50%;
+    }
+
+    .shedule_text {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .suptitles {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+
+    .shedule_title {
+        font-size: calc(2.8rem + 0.5vw);
+        text-transform: uppercase;
+    }
+
+    .first_subtitles {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+
+    .money {
+        display: flex;
+        justify-content: space-between;
+    }
+    .money_text {
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .money_image {
+        width: 40%;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .the_phone_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .over_the_phone_blocks {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .shapper_text {
+        margin-left: 70px;
+    }
+
+    .personal_text {
+        margin-right: 70px;
+    }
+
+    .shapper_title {
+        font-size: calc(2.8rem + 0.5vw);
+    }
+
+    .second_subtitles {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+
+    .personal_title {
+        font-size: calc(2.5rem + 0.5vw);
+        max-width: 300px;
+    }
+
+     /*Last page*/
+     .last_page {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .last_page_photo {
+        display: flex;
+        width: 50%;
+    }
+
+    .last_page_subscribe {
+        height: 898px;
+        width: 50%;
+    }
+
+    .inner_subscribe_box {
+        width: 100%;
+        margin-top: 95px;
+    }
+
+    .subscribe_title {
+        width: 118px;
+        height: 32px;
+        font-size: calc(1.2rem + 1vw);
+        margin-top: 70px;
+        margin-left: 20px;
+        line-height: 32px;
+    }
+
+    .circles_box {
+        width: 100%;
+    }
+
+    .first_circle {
+        width: 33%;
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .second_circle {
+        width: 33%;
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .third_circle {
+        width: 33%;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .input_field {
+        margin-top: 50px;
+        width: 90%;
+        height: 41px;
+        font-size: calc(0.675rem + 1vw);
+        line-height: 23px;
+    }
+
+    .button-sub {
+        margin-top: 50px;
+        width: 90%;
+        height: 59px;
+    }
+
+    .drop-down {
+        width: 90%;
+        height: 41px;
+    }
+
+    .drop-down-text {
+        padding-top: 10px;
+        font-size: calc(0.675rem + 1vw);
+        line-height: 23px;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        width: 100%;
+        height: 95px;
+    }
+
+    .footer_logo {
+        margin-top: 39px;
+        margin-left: 20px;
+    }
+
+    .footer_text {
+        font-size: calc(0.4rem + 1vw);
+        margin-top: 42px;
+        margin-right: 20px;
+        line-height: 16px;
+    }
 }
