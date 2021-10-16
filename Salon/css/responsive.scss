@@ -146,7 +146,7 @@ body {
         justify-content: center;
         width: 100%;
         margin-top: -4px;
-        font-size: 62px;
+        font-size: calc(50px + 1vw);
         line-height: 62px;
     }
 
@@ -159,7 +159,7 @@ body {
 
     .coming_soon_subtitle {
         max-width: 301px;
-        font-size: calc(0.575rem + 1vw);
+        font-size: calc(0.475rem + 1vw);
         line-height: 24px;
     }
 
@@ -167,16 +167,17 @@ body {
 
     .shedulepage_main_image {
         width: 100%;
-        height: 221px;
+        height: 300px;
         transform: none;
         margin-bottom: 0;
+        background-position: center;
     }   
 
     /*OWN SHEDULE*/
 
     .shedule {
         width: 100%;
-        height: 444px;
+        height: 600px;
         align-items: center;
         flex-direction: column-reverse;
         margin: 0;
@@ -184,7 +185,7 @@ body {
 
     .shedule_image {
         width: 90%;
-        height: 183px;
+        height: 280px;
         margin-bottom: 66px;
         background-position: center;
         background-size: 100%;
@@ -229,7 +230,7 @@ body {
 
     .money_page {
         width: 100%;
-        height: 421px;
+        height: 600px;
     }
 
     .money {
@@ -238,12 +239,13 @@ body {
         flex-direction: column;
         justify-content: flex-end;
         width: 100%;
-        height: 421px;
+        height: 600px;
     }
 
     .money_text {
         margin-left: 20px;
         margin-top: -120px;
+        margin-bottom: 30px;
     }
 
     .money_suptitle {
@@ -266,7 +268,7 @@ body {
         margin-left: 0px;
         margin-bottom: -15px;
         width: 100%;
-        height: 206px;
+        height: 350px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
