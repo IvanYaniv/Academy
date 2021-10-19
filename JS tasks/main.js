@@ -1,3 +1,15 @@
+function sortingAsc(a, b) { 
+  return a-b 
+} 
+
+function sortingDes(a, b) { 
+  return b-a 
+} 
+
+function sortingByLengthAsc(a, b) { 
+  return a.length-b.length 
+} 
+
 /*First Qustion*/
 let first = "First Question"
 console.log(first)
@@ -14,15 +26,35 @@ console.log(countTrue([]));
 let second = "Second Question"
 console.log(second) 
 
-var jazz = ["G", "F", "C"];
-var secondJazz = ["Dm", "G", "E", "A"];
-var thirdJazz = ["F7", "E7", "A7", "Ab7", "Gm7", "C7"];
-var fourthJazz = [];
-jazz = jazz.map(function(el) { return el + '7'; });
-secondJazz = secondJazz.map(function(el) { return el + '7'; });
-fourthJazz = fourthJazz.map(function(el) { return el + '7'; });
+function jazzify(a) {
+  let reg = /^[A-G]m?$/g;
+  let regJazz = /^[A-G]m?7{1}$/g;
+  let z = [];
+  for (let i of a){
+      if (i.match(reg)){
+          z.push(i+="7");
+      }else if (i.match(regJazz)){
+          z.push(i);
+      }
+}
+return z;
+}
 
-console.log(jazz, secondJazz, thirdJazz, fourthJazz)
+function jazzify2(a) {
+  let z = [];
+  let reg = /^[A-G]m?$/g;
+  for (let i of a) {
+      if(i.endsWith("7")){
+          z.push(i);
+      } else if (i = i.match(reg)){
+          z.push(i+="7");
+      }
+  }
+  return z;
+}
+
+console.log(jazzify(["G", "F", "C"]))
+console.log(jazzify(["F7", "E", "A7", "Ab", "Gm", "C7"]))
 
 /*Third Qustion*/
 let third = "Third Question"
@@ -32,9 +64,9 @@ const firstValue = [1, 2, 3];
 const secondValue = [1, 2, 5, 4, 8, 5, 9, 7, 2, 3];
 const thirdValue = [7, 3, 0, 6, 5];
 
-firstValue.sort(function(a, b){return b-a});
-secondValue.sort(function(a, b){return b-a});
-thirdValue.sort(function(a, b){return b-a});
+firstValue.sort(sortingDes);
+secondValue.sort(sortingDes);
+thirdValue.sort(sortingDes);
 
 console.log(firstValue, secondValue, thirdValue)
 
@@ -42,23 +74,17 @@ console.log(firstValue, secondValue, thirdValue)
 let fourth = "Fourth Question"
 console.log(fourth) 
 
-var firstSortArr = ["Google", "Apple", "Microsoft"];
+let firstSortArr = ["Google", "Apple", "Microsoft"];
 
-firstSortArr.sort(function(a, b) {
-    return a.length - b.length
-});
+firstSortArr.sort(sortingByLengthAsc);
 
-var secondSortArr = ["Leonardo", "Michelangelo", "Raphael", "Donatello"];
+let secondSortArr = ["Leonardo", "Michelangelo", "Raphael", "Donatello"];
 
-secondSortArr.sort(function(a, b) {
-    return a.length - b.length
-});
+secondSortArr.sort(sortingByLengthAsc);
 
-var thirdSortArr = ["Turing", "Einstein", "Jung"];
+let thirdSortArr = ["Turing", "Einstein", "Jung"];
 
-thirdSortArr.sort(function(a, b) {
-    return a.length - b.length
-});
+thirdSortArr.sort(sortingByLengthAsc);
 
 
 console.log(firstSortArr, secondSortArr, thirdSortArr);
@@ -85,22 +111,20 @@ function minMax(arr){
 let sixth = "Sixth Question"
 console.log(sixth) 
 
-var firstMassive = [[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]];
-var firstLargest = firstMassive.map(function(item){
-  return Math.max.apply(null,item)
-});
+function largestOfFour(arr) {
+  let largestNumber = [-100,-100,-100];
+  for(let arrayIndex = 0; arrayIndex < arr.length; arrayIndex++) {
+   for(let subArrayIndex = 0; subArrayIndex < arr[arrayIndex].length; subArrayIndex++) {
+      if(arr[arrayIndex][subArrayIndex] > largestNumber[arrayIndex]) {         
+         largestNumber[arrayIndex] = arr[arrayIndex][subArrayIndex];
+       }
+   }
+}
+return largestNumber;
+}
 
-var secondMassive = [[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]];
-var secondLargest = secondMassive.map(function(item){
-  return Math.max.apply(null,item)
-});
-
-var thirdMassive = [[0.4321, 0.7634, 0.652], [1.324, 9.32, 2.5423, 6.4314], [9, 3, 6, 3]];
-var thirdLargest = thirdMassive.map(function(item){
-  return Math.max.apply(null,item)
-});
-
-console.log(firstLargest, secondLargest, thirdLargest);
+console.log(largestOfFour([[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]]));
+console.log(largestOfFour([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
 
 
 /*Seventh Question*/
@@ -108,40 +132,49 @@ let seventh = "Seventh Question"
 console.log(seventh) 
 
 
-function calculator(num1, num2, mark) {
-    switch (mark) {
-      case "*":
-        return num1 * num2;
-      case "+":
-        return num1 + num2;
-      case "-":
-        return num1 - num2;
-      case "/":
-        if (num2 !== 0) {
-          return num1 / num2;
-        } else {
-          return "не ділиться";
-        }
-    }
+class Calculator {
+  constructor(num1, num2) {
+      this.num1 = num1;
+      this.num2 = num2;
   }
+  get add() {
+      return this.num1 + this.num2;
+  }
+  get multiply() {
+      return this.num1 * this.num2;
+  }
+  get divide() {
+      return this.num1 / this.num2;
+  }
+  get subtract() {
+      return this.num1 - this.num2;
+  }
+}
 
-console.log(calculator(10, 5, "+"))
-console.log(calculator(10, 5, "-"))
-console.log(calculator(10, 5, "*"))
-console.log(calculator(10, 5, "/"))
+const calc = new Calculator(10, 5)
+
+console.log(calc.add)
+console.log(calc.multiply)
+console.log(calc.divide)
+console.log(calc.subtract)
+
+
 
 /*Eighth Question*/
 let eighth = "Eighth Question"
 console.log(eighth)
 
-function keysAndValues(data){
-  var keys = Object.keys(data),
-      values = keys.map(function (key) {
-          return data[key];
-      });
-  
-  return [keys, values]; 
+function keysAndValues(data){ 
+  const keys = Object.keys(data), values = []; 
+  keys.sort(); 
+   
+  for (i = 0; i < keys.length; i++) { 
+    values[i]= data[keys[i]]; 
+  } 
+ 
+  return [keys, values];  
 }
+
 
 console.log(keysAndValues({ a: 1, b: 2, c: 3 }));
 console.log(keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" }));
@@ -152,35 +185,24 @@ console.log(keysAndValues({ key1: true, key2: false, key3: undefined }));
 let ninth = "Ninth Question"
 console.log(ninth)
 
-const ascDec = [1,2,3,4,5,6,7,8,9,10];
 
-function none() {
-  return ascDec
+function ascDesNone(adn, method) {
+    if(method === "Asc") {
+      let adnCopy = adn.sort();
+      return adnCopy;
+  } else if (method === "Des") {
+      let adnCopy = adn.sort().reverse();
+      return adnCopy;
+  } else if (method === "None") {
+      return adn;
+  }
 }
 
-let ascDecCopy = ascDec;
-
-function sIncrease(i, ii) { 
-    if (i > ii)
-        return 1;
-    else if (i < ii)
-        return -1;
-    else
-        return 0;
-}
-function sDecrease(i, ii) { 
-    if (i > ii)
-        return -1;
-    else if (i < ii)
-        return 1;
-    else
-        return 0;
-}
+console.log(ascDesNone([4, 3, 2, 1], "Asc"))
+console.log(ascDesNone([4, 3, 2, 1], "Des"))
+console.log(ascDesNone([4, 3, 2, 1], "None"))
 
 
-console.log(ascDecCopy.sort(sIncrease))
-console.log(ascDecCopy.sort(sDecrease))
-console.log(ascDec.sort(none))
 
 
 
@@ -224,23 +246,37 @@ console.log(hasHiddenFee(["$1"], "$4"))
 let twelfth = "Twelfth Question"
 console.log(twelfth)
 
-var MAX = 100;
+function getValue(matrix) {
+  let sum = 0;
 
-function findTrace(mat, n)
-{
-    var sum = 0;
-    for(var i = 0; i < n; i++)
-        sum += mat[i][i];
-         
-    return sum;
+  for (let i = 0, l = matrix.length; i < l; i++)
+      sum += matrix[i][i];
+
+  return sum;
 }
 
-var mat = [ [1, 0, 1, 0],
-            [0, 2, 0, 2],
-            [3, 0, 3, 0],
-            [0, 4, 0, 4] ];
+console.log(getValue([
+  [1, 0, 1, 0],
+  [0, 2, 0, 2],
+  [3, 0, 3, 0],
+  [0, 4, 0, 4]
+]
+));
 
-console.log(findTrace(mat, 4))
+console.log(getValue([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+])
+);
+
+console.log(getValue([
+  [1, 4],
+  [4, 1]
+])
+);
+
+
 
 
 
@@ -288,18 +324,16 @@ let sixteenth = "Sixteenth Question"
 console.log(sixteenth)
 
 
-function celsiusToFahrenheit ( C )
-{
-    return C*9/5 +32
+function celToKelAndFah(cel) {
+  let kelvin = cel + 273.15;
+  let fahrenheit  = cel * 9/5 + 32;
+  return [fahrenheit, kelvin];
 }
 
-function celsiusToKelvin  ( C )
-{
-    return C + 273.15
-}
-
-console.log(celsiusToFahrenheit(0))
-console.log(celsiusToKelvin(0))
+console.log(celToKelAndFah(0))
+console.log(celToKelAndFah(100))
+console.log(celToKelAndFah(-10))
+console.log(celToKelAndFah(300.4))
 
 
 
@@ -308,7 +342,7 @@ let seventeenth = "Seventeenth Question"
 console.log(seventeenth)
 
 function fearNotLetter(str) {
-  var i, j = 0, m = 122;
+  let i, j = 0, m = 122;
   if (str) {
       i = str.charCodeAt(0);
       while (i <= m && j < str.length) {

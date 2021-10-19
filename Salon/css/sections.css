@@ -412,14 +412,32 @@ body {
   margin-top: 69px;
   background: url(../images/firstcircle.jpg);
   background-repeat: no-repeat;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
 .second_circle {
   width: 540px;
   height: 540px;
   margin-top: 69px;
   background: url(../images/firstcircle.jpg);
   background-repeat: no-repeat;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
 .third_circle {
@@ -428,6 +446,8 @@ body {
   margin-top: 69px;
   background: url(../images/thirdcircle.jpg);
   background-repeat: no-repeat;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
 .phone_photo {
