@@ -406,14 +406,17 @@ body {
   margin-top: 210px;
 }
 
-.first_circle {
+.circles {
   width: 541px;
   height: 541px;
   margin-top: 69px;
-  background: url(../images/firstcircle.jpg);
-  background-repeat: no-repeat;
   -webkit-animation: pulsing 2s infinite;
   animation: pulsing 2s infinite;
+}
+
+.first_circle {
+  background: url(../images/firstcircle.jpg);
+  background-repeat: no-repeat;
 }
 
 @keyframes pulsing {
@@ -431,23 +434,13 @@ body {
   }
 }
 .second_circle {
-  width: 540px;
-  height: 540px;
-  margin-top: 69px;
   background: url(../images/firstcircle.jpg);
   background-repeat: no-repeat;
-  -webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
 }
 
 .third_circle {
-  width: 540px;
-  height: 540px;
-  margin-top: 69px;
   background: url(../images/thirdcircle.jpg);
   background-repeat: no-repeat;
-  -webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
 }
 
 .phone_photo {

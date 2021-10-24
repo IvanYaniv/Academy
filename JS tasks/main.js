@@ -133,30 +133,31 @@ console.log(seventh)
 
 
 class Calculator {
-  constructor(num1, num2) {
-      this.num1 = num1;
-      this.num2 = num2;
+  add(a, b) {
+    return a + b;
   }
-  get add() {
-      return this.num1 + this.num2;
+  
+  sub(a, b) {
+    return a - b;
   }
-  get multiply() {
-      return this.num1 * this.num2;
+  
+  mul(a, b) {
+    return a * b;
   }
-  get divide() {
-      return this.num1 / this.num2;
-  }
-  get subtract() {
-      return this.num1 - this.num2;
+  
+  div(a, b) {
+    if (b == 0) throw new Error('div by 0 not allowed');
+    return a / b;
   }
 }
 
-const calc = new Calculator(10, 5)
+let calculator = new Calculator();
 
-console.log(calc.add)
-console.log(calc.multiply)
-console.log(calc.divide)
-console.log(calc.subtract)
+console.log(calculator.add(10, 5))
+console.log(calculator.sub(10, 5))
+console.log(calculator.mul(10, 5))
+console.log(calculator.div(10, 5))
+
 
 
 
