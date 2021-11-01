@@ -1,0 +1,212 @@
+.Card {
+    width: 560px;
+    height: 777px;
+    margin-left: 485px;
+
+    &__top {
+        margin-top: -10px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+
+    &__ava {
+        width: 192px;
+        height: 40px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        background: url(../../public/images/Nettie.jpg);
+    }
+
+    &__userInfo {
+        width: 136px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__userNameText {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #010101;
+    }
+
+    &__timeUnderUserName{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #010101;
+        opacity: 0.25;
+    }
+
+    &__menuIcon {
+        width: 32px;
+        height: 32px;
+        background: url(../../public/images/Menuicon.svg);
+    }
+
+    &__publicationImg {
+        width: 560px;
+        height: 560px;
+        margin-top: 16px;
+    }
+
+    &__underPublication {
+        margin-top: 20px;
+        margin-right: 4px;
+        margin-left: 4px;
+        width: 552px;
+        height: 100px;
+    }
+
+    &__underPublicationText {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #808080;
+        white-space: pre-line;
+    }
+
+    &__lower {
+        margin-top: 16px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__lowerInteractions {
+        width: 156px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__likes {
+        width: 63px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__likesIcon {
+        margin-left: 2.25px;
+        width: 19.5px;
+        height: 21.75px;
+        background: url(../../public/images/Likes.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__lowerNumber {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__comments {
+        width: 53px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    &__commentsIcon {
+        width: 24px;
+        height: 24px;
+        background: url(../../public/images/Comments.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    
+    
+    &__lowerShare {
+        width: 80px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__ShareLogo {
+        width: 48px;
+        height: 20px;
+        background: url(../../public/images/Share.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__ShareArrow {
+        width: 24px;
+        height: 24px;
+        background: url(../../public/images/Arrowright.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__publicationImgMob {
+        display: none;
+    }
+
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .Card {
+        width: 100%;
+        height: 777px;
+        margin-left: 0px;
+    
+    
+        &__publicationImg {
+            display: none;
+        }
+
+        &__publicationImgMob {
+            display: block;
+            width: 340px;
+            height: 343px;
+            margin-top: 12px;
+        }
+
+        &__underPublication {
+            margin-top: 20px;
+            margin-right: 4px;
+            margin-left: 4px;
+            width: 340px;
+            height: 100px;
+        }
+
+
+    }    
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+
+}

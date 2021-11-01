@@ -1,0 +1,17 @@
+.Footer {
+    margin-top: 32px;
+    width: 304px;
+    height: 40px;
+
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        white-space: pre-line;
+        color: #C9CAD1;
+    }
+}

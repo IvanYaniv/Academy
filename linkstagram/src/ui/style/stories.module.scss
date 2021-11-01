@@ -1,0 +1,295 @@
+.Stories {
+    
+    &__newPostAvail {
+        margin-top: 20px;
+        margin-left: 680px;
+        width: 171px;
+        height: 28px;
+        background: #FFFFFF;    
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    &__newPostAvailBox {
+        width: 146px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__newPostAvailText {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: #0087FF;
+    }
+
+    &__newPostAvailIcon {
+        margin-right: 12px;
+        margin-bottom: 2px;
+        width: 15px;
+        height: 15px;
+        background: url(../../public/images/SmallCross.svg);
+    }
+
+
+
+    &__storiesIconBox {
+        width: 624px;
+        margin-top: 48px;
+        margin-left: 421px;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+
+    &__storiesIcon {
+        width: 66px;
+        height: 64px;
+        border-radius: 16px;
+        padding: 4px;
+        &:not(:first-child) {
+            margin-left: 24px;
+            }
+        &:nth-child(2) {
+            margin-left: 0px;
+        }    
+        }    
+
+
+    &__storiesIconOne {
+        background: linear-gradient(90deg, rgba(250, 251, 252, 0) 0%, #FAFBFC 100%);
+        transform: rotate(-180deg);
+        background-position: center;
+    }
+
+    
+    &__storiesIconTwo {
+        background: url(../../public/images/Avatar1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__storiesIconThree {
+        background: url(../../public/images/Avatar2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__storiesIconFour {
+        background: url(../../public/images/Avatar3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__storiesIconFive {
+        background: url(../../public/images/Avatar4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__storiesIconSix {
+        background: url(../../public/images/Avatar5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__storiesIconSeven {
+        background: url(../../public/images/Avatar6.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0.5px solid #C9CAD1;
+        box-sizing: border-box;
+        opacity: .7;
+    }
+
+    &__storiesIconEight {
+        background: url(../../public/images/Avatar7.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        opacity: .1;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .Stories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__newPostAvail {
+            margin-top: 8px;
+            margin-left: 0px;
+        }
+
+        &__newPostAvailIcon {
+            margin-right: 6.07px;
+            margin-bottom: 2px;
+        }
+        
+        &__storiesIconBox {
+            width: 90%;
+            margin-left: 0px;
+            justify-content: center;
+
+        }
+
+        &__storiesIcon {
+            width: 40px;
+            height: 40px;
+            border-radius: 16px;
+            padding: 4px;
+            &:not(:first-child) {
+                margin-left: 16px;
+                }
+            &:nth-child(2) {
+                margin-left: 0px;
+            }    
+            }  
+        
+        &__storiesIconOne {
+            display: none;
+        }
+
+        &__storiesIconEight {
+            display: none;
+        }
+
+        &__storiesIconTwo {
+            background: url(../../public/images/small1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &__storiesIconThree {
+            background: url(../../public/images/Small2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }    
+
+        &__storiesIconFour {
+            background: url(../../public/images/Small3.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        &__storiesIconFive {
+                background: url(../../public/images/Small4.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }    
+        
+
+        &__storiesIconSix {
+            background: url(../../public/images/Small5.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: .7;
+        }
+
+        &__storiesIconSeven {
+            background: url(../../public/images/Small6.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: .3;
+        }
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .Stories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__newPostAvail {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+
+        &__newPostAvailIcon {
+            margin-right: 6.07px;
+            margin-bottom: 2px;
+        }
+        
+        &__storiesIconBox {
+            width: 90%;
+            margin-left: 0px;
+            justify-content: center;
+
+        }
+
+        &__storiesIcon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            padding: 4px;
+            &:not(:first-child) {
+                margin-left: 16px;
+                }
+            &:nth-child(2) {
+                margin-left: 0px;
+            }    
+            }  
+        
+        &__storiesIconOne {
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+    .Stories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__newPostAvail {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+
+        &__newPostAvailIcon {
+            margin-right: 6.07px;
+            margin-bottom: 2px;
+        }
+        
+        &__storiesIconBox {
+            width: 90%;
+            margin-left: 0px;
+            justify-content: center;
+
+        }
+
+        &__storiesIcon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            padding: 4px;
+            &:not(:first-child) {
+                margin-left: 16px;
+                }
+            &:nth-child(2) {
+                margin-left: 0px;
+            }    
+            }  
+        
+        &__storiesIconOne {
+            display: none;
+        }
+
+    }
+}

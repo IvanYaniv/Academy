@@ -1,0 +1,156 @@
+.Main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &__profileBar {
+        margin-top: 33px;
+        margin-left: 82px;
+        width: 304px;
+        height: 245px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__followStatus {
+        margin-left: 12.5px;
+        width: 279px;
+        height: 94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__followNumsAndText {
+        width: 75px;
+        height: 44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__followNumber {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #010101;
+    }
+
+    &__followText {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #C9CAD1;
+    }
+
+    &__followAva {
+        width: 88px;
+        height: 94px;
+        background: url(../../public/images/Ava.png);
+    }
+
+
+    &__profileTitle {
+        margin-top: 17px;
+        margin-left: 16.5px;
+        width: 271px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__profileName {
+        color: #000000;
+    }
+
+    &__profileIcon {
+        width: 4px;
+        height: 1px;
+        background: url(../../public/images/Dash.svg);
+    }
+
+    &__profileJob {
+        color: #000000;
+    }
+
+
+    &__profileSubtitle {
+        margin-top: 17px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #808080;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    &__profileButtons {
+        margin-top: 17px;
+        margin-left: 42.5px;
+        width: 219px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__profileBox {
+        width: 103px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    &__editBtn {
+        background: #FFFFFF;
+    }
+
+    &__newPostBtn {
+        background-color: #0087FF;
+        ;
+    }
+
+    &__editText {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #010101;
+    }
+
+    &__newPostText {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+
+}

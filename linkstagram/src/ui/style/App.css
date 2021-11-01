@@ -1,0 +1,675 @@
+.Header {
+  width: 1920px;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+.Header__logo {
+  margin-left: 64px;
+  width: 105px;
+  height: 24px;
+  background: url(../../public/images/Linkstagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Header__nav {
+  display: flex;
+}
+.Header__item:not(:last-child) {
+  margin-right: 16px;
+}
+.Header__item:last-child {
+  margin-right: 64px;
+}
+.Header__homeTypo {
+  font-size: 12px;
+  line-height: 20px;
+  color: #FAFBFC;
+  text-decoration: none;
+}
+.Header__homeBox {
+  width: 85px;
+  height: 40px;
+  background: #010101;
+  padding: 4px 24px;
+}
+.Header__langBox {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  padding: 10px 12px;
+}
+.Header__navImg {
+  width: 40px;
+  height: 40px;
+  background: url(../../public/images/Rectangle29.jpg);
+}
+.Header__navMobile {
+  display: none;
+}
+
+.LinkBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0.5px solid #C9CAD1;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.LangEn {
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .Header {
+    width: 100%;
+    height: 64px;
+  }
+  .Header__logo {
+    margin-left: 16px;
+    width: 105px;
+    height: 24px;
+  }
+  .Header__nav {
+    display: none;
+  }
+  .Header__navMobile {
+    display: block;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .Header {
+    width: 100%;
+    height: 64px;
+  }
+  .Header__logo {
+    margin-left: 64px;
+    width: 105px;
+    height: 24px;
+  }
+  .Header__nav {
+    display: none;
+  }
+  .Header__navMobile {
+    display: block;
+    margin-right: 64px;
+  }
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+  .Header {
+    width: 100%;
+    height: 64px;
+  }
+  .Header__navMobile {
+    display: none;
+  }
+}
+.Card {
+  width: 560px;
+  height: 777px;
+  margin-left: 485px;
+}
+.Card__top {
+  margin-top: -10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.Card__ava {
+  width: 192px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card__avatar {
+  width: 40px;
+  height: 40px;
+  background: url(../../public/images/Nettie.jpg);
+}
+.Card__userInfo {
+  width: 136px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Card__userNameText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #010101;
+}
+.Card__timeUnderUserName {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #010101;
+  opacity: 0.25;
+}
+.Card__menuIcon {
+  width: 32px;
+  height: 32px;
+  background: url(../../public/images/Menuicon.svg);
+}
+.Card__publicationImg {
+  width: 560px;
+  height: 560px;
+  margin-top: 16px;
+}
+.Card__underPublication {
+  margin-top: 20px;
+  margin-right: 4px;
+  margin-left: 4px;
+  width: 552px;
+  height: 100px;
+}
+.Card__underPublicationText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #808080;
+  white-space: pre-line;
+}
+.Card__lower {
+  margin-top: 16px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card__lowerInteractions {
+  width: 156px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card__likes {
+  width: 63px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card__likesIcon {
+  margin-left: 2.25px;
+  width: 19.5px;
+  height: 21.75px;
+  background: url(../../public/images/Likes.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Card__lowerNumber {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.Card__comments {
+  width: 53px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card__commentsIcon {
+  width: 24px;
+  height: 24px;
+  background: url(../../public/images/Comments.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Card__lowerShare {
+  width: 80px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card__ShareLogo {
+  width: 48px;
+  height: 20px;
+  background: url(../../public/images/Share.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Card__ShareArrow {
+  width: 24px;
+  height: 24px;
+  background: url(../../public/images/Arrowright.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Card__publicationImgMob {
+  display: none;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .Card {
+    width: 100%;
+    height: 777px;
+    margin-left: 0px;
+  }
+  .Card__publicationImg {
+    display: none;
+  }
+  .Card__publicationImgMob {
+    display: block;
+    width: 340px;
+    height: 343px;
+    margin-top: 12px;
+  }
+  .Card__underPublication {
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-left: 4px;
+    width: 340px;
+    height: 100px;
+  }
+}
+.Main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.Main__profileBar {
+  margin-top: 33px;
+  margin-left: 82px;
+  width: 304px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+}
+.Main__followStatus {
+  margin-left: 12.5px;
+  width: 279px;
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main__followNumsAndText {
+  width: 75px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Main__followNumber {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #010101;
+}
+.Main__followText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C9CAD1;
+}
+.Main__followAva {
+  width: 88px;
+  height: 94px;
+  background: url(../../public/images/Ava.png);
+}
+.Main__profileTitle {
+  margin-top: 17px;
+  margin-left: 16.5px;
+  width: 271px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main__profileName {
+  color: #000000;
+}
+.Main__profileIcon {
+  width: 4px;
+  height: 1px;
+  background: url(../../public/images/Dash.svg);
+}
+.Main__profileJob {
+  color: #000000;
+}
+.Main__profileSubtitle {
+  margin-top: 17px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #808080;
+  text-align: center;
+  white-space: pre-line;
+}
+.Main__profileButtons {
+  margin-top: 17px;
+  margin-left: 42.5px;
+  width: 219px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main__profileBox {
+  width: 103px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.Main__editBtn {
+  background: #FFFFFF;
+}
+.Main__newPostBtn {
+  background-color: #0087FF;
+}
+.Main__editText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #010101;
+}
+.Main__newPostText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.Stories__newPostAvail {
+  margin-top: 20px;
+  margin-left: 680px;
+  width: 171px;
+  height: 28px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.Stories__newPostAvailBox {
+  width: 146px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Stories__newPostAvailText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #0087FF;
+}
+.Stories__newPostAvailIcon {
+  margin-right: 12px;
+  margin-bottom: 2px;
+  width: 15px;
+  height: 15px;
+  background: url(../../public/images/SmallCross.svg);
+}
+.Stories__storiesIconBox {
+  width: 624px;
+  margin-top: 48px;
+  margin-left: 421px;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.Stories__storiesIcon {
+  width: 66px;
+  height: 64px;
+  border-radius: 16px;
+  padding: 4px;
+}
+.Stories__storiesIcon:not(:first-child) {
+  margin-left: 24px;
+}
+.Stories__storiesIcon:nth-child(2) {
+  margin-left: 0px;
+}
+.Stories__storiesIconOne {
+  background: linear-gradient(90deg, rgba(250, 251, 252, 0) 0%, #FAFBFC 100%);
+  transform: rotate(-180deg);
+  background-position: center;
+}
+.Stories__storiesIconTwo {
+  background: url(../../public/images/Avatar1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Stories__storiesIconThree {
+  background: url(../../public/images/Avatar2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Stories__storiesIconFour {
+  background: url(../../public/images/Avatar3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Stories__storiesIconFive {
+  background: url(../../public/images/Avatar4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Stories__storiesIconSix {
+  background: url(../../public/images/Avatar5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Stories__storiesIconSeven {
+  background: url(../../public/images/Avatar6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0.5px solid #C9CAD1;
+  box-sizing: border-box;
+  opacity: 0.7;
+}
+.Stories__storiesIconEight {
+  background: url(../../public/images/Avatar7.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: 0.1;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .Stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Stories__newPostAvail {
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  .Stories__newPostAvailIcon {
+    margin-right: 6.07px;
+    margin-bottom: 2px;
+  }
+  .Stories__storiesIconBox {
+    width: 90%;
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .Stories__storiesIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+    padding: 4px;
+  }
+  .Stories__storiesIcon:not(:first-child) {
+    margin-left: 16px;
+  }
+  .Stories__storiesIcon:nth-child(2) {
+    margin-left: 0px;
+  }
+  .Stories__storiesIconOne {
+    display: none;
+  }
+  .Stories__storiesIconEight {
+    display: none;
+  }
+  .Stories__storiesIconTwo {
+    background: url(../../public/images/small1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Stories__storiesIconThree {
+    background: url(../../public/images/Small2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Stories__storiesIconFour {
+    background: url(../../public/images/Small3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Stories__storiesIconFive {
+    background: url(../../public/images/Small4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Stories__storiesIconSix {
+    background: url(../../public/images/Small5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+  }
+  .Stories__storiesIconSeven {
+    background: url(../../public/images/Small6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .Stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Stories__newPostAvail {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .Stories__newPostAvailIcon {
+    margin-right: 6.07px;
+    margin-bottom: 2px;
+  }
+  .Stories__storiesIconBox {
+    width: 90%;
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .Stories__storiesIcon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    padding: 4px;
+  }
+  .Stories__storiesIcon:not(:first-child) {
+    margin-left: 16px;
+  }
+  .Stories__storiesIcon:nth-child(2) {
+    margin-left: 0px;
+  }
+  .Stories__storiesIconOne {
+    display: none;
+  }
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+  .Stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Stories__newPostAvail {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .Stories__newPostAvailIcon {
+    margin-right: 6.07px;
+    margin-bottom: 2px;
+  }
+  .Stories__storiesIconBox {
+    width: 90%;
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .Stories__storiesIcon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    padding: 4px;
+  }
+  .Stories__storiesIcon:not(:first-child) {
+    margin-left: 16px;
+  }
+  .Stories__storiesIcon:nth-child(2) {
+    margin-left: 0px;
+  }
+  .Stories__storiesIconOne {
+    display: none;
+  }
+}
+.Footer {
+  margin-top: 32px;
+  width: 304px;
+  height: 40px;
+}
+.Footer__text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  white-space: pre-line;
+  color: #C9CAD1;
+}
+
+* {
+  margin: 0;
+}
+
+/*# sourceMappingURL=App.css.map */
