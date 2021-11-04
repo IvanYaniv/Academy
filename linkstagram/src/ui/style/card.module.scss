@@ -1,21 +1,21 @@
+@import './variables.scss';
+
 .Card {
     width: 560px;
     height: 777px;
-    margin-left: 485px;
 
     &__top {
-        margin-top: -10px;
+        width: 560px;
+        margin-top: 48px;
         height: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 2;
     }
 
     &__ava {
         width: 192px;
         height: 40px;
-        background-color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -42,14 +42,14 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        color: #010101;
+        color: $mainBlack;
     }
 
     &__timeUnderUserName{
         font-weight: 500;
         font-size: 12px;
         line-height: 20px;
-        color: #010101;
+        color: $mainBlack;
         opacity: 0.25;
     }
 
@@ -178,35 +178,68 @@
         width: 100%;
         height: 777px;
         margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
-    
+        &__top {
+            margin-top: 12px;
+            width: 300px;
+        }
+
+
         &__publicationImg {
             display: none;
         }
 
         &__publicationImgMob {
             display: block;
-            width: 340px;
-            height: 343px;
             margin-top: 12px;
+            width: 300px;
+            height: 343px;
         }
 
         &__underPublication {
             margin-top: 20px;
             margin-right: 4px;
             margin-left: 4px;
-            width: 340px;
+            width: 300px;
             height: 100px;
         }
-
-
     }    
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1299px) {
+    .Card {
+        width: 100%;
+        height: 777px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &__top {
+            width: 560px;
+        }
 
-}
 
-@media screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+        &__publicationImg {
+            display: none;
+        }
 
+        &__publicationImgMob {
+            display: block;
+            margin-top: 12px;
+            width: 560px;
+            height: 560px;
+        }
+
+        &__underPublication {
+            margin-top: 20px;
+            margin-right: 4px;
+            margin-left: 4px;
+            width: 560px;
+            height: 100px;
+        }
+    }    
 }

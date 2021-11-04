@@ -19,9 +19,9 @@ const Card = () =>
         </div>
 
         <div className={Style.Card__publicationImg}><img src={PublicationImg} alt="publication" /></div>
-        <div className={Style.Card__publicationImgMob}><img src={PublicationImgMob} alt="publication" /></div>
+        <img className={Style.Card__publicationImgMob} src={PublicationImgMob} alt="publication" />
 
-        <div className={Style.Card__underPublication}>
+        <div className={Style.Card__underPublication}> 
             <div><p className={Style.Card__underPublicationText}>{`TB to New York October 2018.
             "You shouldn't wait for other people to make special things happen. 
             You have to create your own memories." Heidi Klum`}</p></div>
@@ -42,7 +42,7 @@ const Card = () =>
                     <div className={Style.Card__ShareArrow}></div>
                 </div>
             </div>
-        </div>
+        </div> 
 
     </div>
  )}

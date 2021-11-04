@@ -9,7 +9,7 @@ import Footer from "./footer"
 const Main = () => 
 {return( 
      <div className={Style.Main}>
-         <div> 
+         <div className={Style.Main__StoriesCard}> 
             <Stories />
             <Card />
         </div>
@@ -39,7 +39,7 @@ const Main = () =>
             <div>
                 <Footer />
             </div>
-        </div> 
+        </div>   
     </div> 
  )}
 
