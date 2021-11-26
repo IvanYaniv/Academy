@@ -1,0 +1,126 @@
+@import './variables.scss';
+
+.Header {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $mainWhite;
+    box-shadow: $boxShadow;
+
+
+    &__logo {
+        margin-left: 64px;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+        margin-right: 16px;
+        }
+
+        &:last-child {
+        margin-right: 64px;
+        }
+    }
+
+    &__homeTypo {
+        font-size: 12px;
+        line-height: 20px;
+        color: #FAFBFC;
+        text-decoration: none;
+    }
+
+    &__homeBox {
+        width: 85px;
+        height: 40px;
+        background: $mainBlack;
+        padding: 4px 24px;
+    }
+
+    &__langBox {
+        width: 40px;
+        height: 40px;
+        background: $mainWhite;
+        padding: 10px 12px;
+    }
+
+    &__navImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__navMobile {
+        display: none;
+    }
+
+    &__navShopIcon {
+        background: url(../../images/shop-two.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.LinkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.5px solid $gray;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.LangEn {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .Header {
+        width: 100%;
+        height: 64px;
+    
+        &__logo {
+            margin-left: 16px;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__navMobile {
+            display: block;
+            margin-right: 12px;
+        }
+    }    
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1299px) {
+    .Header {
+        width: 100%;
+        height: 64px;
+    
+        &__logo {
+            margin-left: 64px;
+            width: 105px;
+            height: 24px;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__navMobile {
+            display: block;
+            margin-right: 64px;
+        }
+    }    
+}

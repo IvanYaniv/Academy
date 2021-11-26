@@ -1,6 +1,6 @@
 import React from "react";
-import HomePage from "../../pages/home/home"
-import Profile from "../../pages/profile/profile"
+import ProductsList from "../../pages/home/home"
+import ProductCard from "../../pages/profile/profile"
 
 
 
@@ -18,10 +18,10 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">HomePage</Link>
+              <Link to="/">ProductsList</Link>
             </li>
             <li>
-              <Link to="/Profile">Profile</Link>
+              <Link to="/ProductCard">ProductCard</Link>
             </li>
           </ul>
         </nav>
@@ -29,11 +29,11 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Profile">
-            <Profile />
+          <Route path="/ProductCard">
+            <ProductCard />
           </Route>
           <Route path="/">
-            <HomePage />
+            <ProductsList />
           </Route>
         </Switch>
       </div>

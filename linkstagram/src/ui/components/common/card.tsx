@@ -3,6 +3,10 @@ import Style from "../../style/card.module.scss"
 import PublicationImg from '../../../public/images/mainpublication.png'
 import PublicationImgMob from '../../../public/images/Publicationmob.png'
 
+interface ICardProps {
+    post: any;
+}
+
 const Card = () => 
 {return( 
     <div className={Style.Card}>
@@ -11,7 +15,7 @@ const Card = () =>
             <div className={Style.Card__ava}>
                 <div className={Style.Card__avatar + ' ' + Style.LinkBox}></div>
                 <div className={Style.Card__userInfo}>
-                    <h4 className={Style.Card__userNameText}>Nettie Fernandez</h4>
+                    <h4 className={Style.Card__userNameText}>{`${post.author.first_name} ${post.author.last_name}`}</h4>
                     <p className={Style.Card__timeUnderUserName}>Just now</p>
                 </div>
             </div>

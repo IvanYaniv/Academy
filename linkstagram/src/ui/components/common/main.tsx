@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Style from "../../style/main.module.scss"
 import Card from "./card"
 import Stories from "./stories"
 import Footer from "./footer"
+import NewPost from "./newpost"
+import { useSelector } from "react-redux";
+import { AppState } from "../../../core/store/store";
 
 
 
 const Main = () => 
-{return( 
+{
+    const posts = useSelector((state: AppState) => state.posts.posts);
+    useEffect(() => {
+        console.log(posts);
+    }, [posts]);
+
+    return( 
      <div className={Style.Main}>
          <div className={Style.Main__StoriesCard}> 
             <Stories />
+            <div className={styles.main__cards}>
+                    {posts.map(post => <Card post={post} /> )}
+            </div>
             <Card />
         </div>
+        <div><NewPost /></div>
         <div className={Style.Main__profileBar}>
             <div className={Style.Main__followStatus}>
                 <div className={Style.Main__followNumsAndText}>
